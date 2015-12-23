@@ -1,0 +1,22 @@
+2015-12-18 15:38:53 DEBUG Logger:131 - Hello World
+2015-12-18 15:41:43 DEBUG Logger:131 - Hello World
+2015-12-18 15:41:56 DEBUG Logger:131 - Hello World
+2015-12-18 15:42:12 DEBUG Logger:131 - Hello World
+2015-12-18 15:44:40 DEBUG Logger:131 - Hello World
+2015-12-18 15:44:47 DEBUG Logger:131 - Hello World
+2015-12-18 15:44:55 DEBUG Logger:131 - Hello World
+2015-12-18 15:45:21 DEBUG Logger:131 - Hello World
+2015-12-18 15:45:45 DEBUG Logger:131 - Hello World
+2015-12-18 15:45:54 DEBUG Logger:131 - Hello World
+2015-12-18 15:48:43 DEBUG Logger:131 - Hello World
+2015-12-18 16:01:36 DEBUG Logger:133 - Hello World
+2015-12-18 16:04:34 DEBUG Logger:133 - Hello World
+2015-12-18 16:05:17 DEBUG Logger:133 - Hello World
+2015-12-18 16:13:07 DEBUG Logger:133 - Hello World
+2015-12-18 16:13:07 DEBUG Logger:138 - Hello World 2
+2015-12-18 16:13:42 DEBUG Logger:133 - Hello World
+2015-12-18 16:13:42 INFO  Logger:138 - Hello World 2
+2015-12-18 16:19:39 DEBUG Logger:133 - Hello World
+2015-12-18 16:19:39 INFO  Logger:138 - Hello World 2
+2015-12-18 16:32:17 DEBUG Logger:133 - Hello World
+2015-12-18 16:32:17 INFO  Logger:138 - Hello World 2
