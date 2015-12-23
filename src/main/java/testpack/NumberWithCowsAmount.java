@@ -1,4 +1,4 @@
-package testpack2;
+package testpack;
 
 /**
  * Created by Windows on 18.12.2015.
@@ -8,7 +8,6 @@ public class NumberWithCowsAmount {
     private int num;
     private int cowsAmount;
     private int bullsAmount;
-    private boolean cowsAmountReceived;
     private int stepNumber;
     private int index1;
     private int index2;
@@ -68,11 +67,5 @@ public class NumberWithCowsAmount {
         return index4;
     }
 
-    public boolean isCowsAmountReceived() {
-        return cowsAmountReceived;
-    }
 
-    public void setCowsAmountReceived(boolean cowsAmountReceived) {
-        this.cowsAmountReceived = cowsAmountReceived;
-    }
 }

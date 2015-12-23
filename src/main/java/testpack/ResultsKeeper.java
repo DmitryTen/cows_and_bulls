@@ -1,7 +1,5 @@
 package testpack;
 
-import testpack2.NumberWithCowsAmount;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
