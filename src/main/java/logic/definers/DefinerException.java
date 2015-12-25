@@ -1,4 +1,4 @@
-package testpack.definers;
+package logic.definers;
 
 /**
  * Created by Windows on 23.12.2015.

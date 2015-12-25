@@ -1,10 +1,10 @@
-package testpack;
+package logic;
 
 
 import org.apache.log4j.Logger;
-import testpack.definers.Definer;
-import testpack.definers.DefinerMain;
-import testpack.definers.DefinerException;
+import logic.definers.Definer;
+import logic.definers.DefinerMain;
+import logic.definers.DefinerException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,9 +15,11 @@ import java.util.HashMap;
 public class NumberFactory {
 
     private static final Logger log = Logger.getLogger(NumberFactory.class);
-    private ArrayList<NumberWithCowsAmount> numbersHistory = Definer.getNumbersHistory();
-    private HashMap<Integer, Boolean> definedDigits = Definer.getDefinedDigits();
+    private ArrayList<NumberWithCowsAmount> numbersHistory = new ArrayList<>();
+    private HashMap<Integer, Boolean> definedDigits = new HashMap<>();
+    private Integer[] rndSecuence = new Integer[10];
     private int stage = 1;
+
 
     private Definer definer;
 
@@ -28,8 +30,15 @@ public class NumberFactory {
     }
 
     private NumberFactory() {
-        definer = new DefinerMain();
+        fillRndSecuence();
+        definer = new DefinerMain(rndSecuence, numbersHistory, definedDigits);
+    }
 
+    private void fillRndSecuence(){
+        ArrayList<Integer> numbersArray = new ArrayList<>();
+        for (int b=0; b<10; b++) numbersArray.add(b);
+        Collections.shuffle(numbersArray);
+        rndSecuence = numbersArray.toArray(rndSecuence);
     }
 
     public int getARandomNumber() throws DefinerException {
@@ -39,10 +48,7 @@ public class NumberFactory {
         if (stage==2) {
 
         }
-
-
-
-
+        return 0;
     }
 
 

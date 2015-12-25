@@ -1,4 +1,6 @@
-package testpack;
+package testpack2;
+
+import logic.NumberWithCowsAmount;
 
 import java.util.ArrayList;
 import java.util.HashMap;
