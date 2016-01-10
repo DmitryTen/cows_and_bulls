@@ -2,6 +2,9 @@ package logic;
 
 import org.apache.log4j.Logger;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  * Created by Windows on 18.12.2015.
  */
@@ -54,20 +57,46 @@ public class NumberWithCowsAmount {
         return (cowsAmount + bullsAmount);
     }
 
-    public int getIndex1() {
+    public int getIndexOfPosition1() {
         return index1;
     }
 
-    public int getIndex2() {
+    public int getIndexOfPosition2() {
         return index2;
     }
 
-    public int getIndex3() {
+    public int getIndexOfPosition3() {
         return index3;
     }
 
-    public int getIndex4() {
+    public int getIndexOfPosition4() {
         return index4;
+    }
+
+    public byte findPositionOfIndex(int searchingIndex){
+        if (searchingIndex==index1) return (byte)0;
+        if (searchingIndex==index2) return (byte)1;
+        if (searchingIndex==index3) return (byte)2;
+        if (searchingIndex==index4) return (byte)3;
+        return -1;
+    }
+
+    public boolean doesIndexExistsInNumber(int searchingIndex){
+        if (searchingIndex==index1) return true;
+        if (searchingIndex==index2) return true;
+        if (searchingIndex==index3) return true;
+        if (searchingIndex==index4) return true;
+        return false;
+    }
+
+    public ArrayList<Integer> getAllTrueIndexesFromCurrentNumber(HashMap<Integer, Boolean> definedIndexes){
+        ArrayList<Integer> trueIndexesOfCurrentNumber = new ArrayList<>();
+        for (Integer index: definedIndexes.keySet()){
+            if(definedIndexes.get(index) == true && doesIndexExistsInNumber(index)){
+                trueIndexesOfCurrentNumber.add(index);
+            }
+        }
+        return trueIndexesOfCurrentNumber;
     }
 
 

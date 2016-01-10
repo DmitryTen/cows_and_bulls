@@ -1,10 +1,10 @@
 package logic;
 
 
+import logic.stage1.DefinerStage1Main;
+import logic.stage2.CowInfo;
+import logic.stage2.DefinerStage2Main;
 import org.apache.log4j.Logger;
-import logic.definers.Definer;
-import logic.definers.DefinerMain;
-import logic.definers.DefinerException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,9 +16,11 @@ public class NumberFactory {
 
     private static final Logger log = Logger.getLogger(NumberFactory.class);
     private ArrayList<NumberWithCowsAmount> numbersHistory = new ArrayList<>();
-    private HashMap<Integer, Boolean> definedDigits = new HashMap<>();
+    private HashMap<Integer, Boolean> definedIndexes = new HashMap<>();
     private Integer[] rndSecuence = new Integer[10];
     private int stage = 1;
+    private HashMap<Integer, CowInfo> cowContainer = new HashMap<>();
+    private HashMap<Byte, Integer> definedPositions = new HashMap<>();
 
 
     private Definer definer;
@@ -31,7 +33,11 @@ public class NumberFactory {
 
     private NumberFactory() {
         fillRndSecuence();
-        definer = new DefinerMain(rndSecuence, numbersHistory, definedDigits);
+        definer = new DefinerStage1Main(rndSecuence, numbersHistory, definedIndexes);
+    }
+
+    public NumberFactory(Integer[] rndSecuence){
+        this.rndSecuence = rndSecuence;
     }
 
     private void fillRndSecuence(){
@@ -41,12 +47,15 @@ public class NumberFactory {
         rndSecuence = numbersArray.toArray(rndSecuence);
     }
 
-    public int getARandomNumber() throws DefinerException {
+    public int getNumber(){
         if (stage==1) {
             return definer.getNumber();
         }
         if (stage==2) {
-
+     //       return definer.getNumber();
+        }
+        if (stage==3) {
+            return 1;
         }
         return 0;
     }
@@ -63,7 +72,7 @@ public class NumberFactory {
 
   /*  public static void main(String[] args){
         NumberFactory n = getInstance();
-        for (int i=0; i<10; i++) System.out.println(n.getARandomNumber());
+        for (int i=0; i<10; i++) System.out.println(n.getNumber());
         log.debug("Hello World");
         method();
     }
@@ -73,6 +82,7 @@ public class NumberFactory {
     }*/
 
     public void setStage(int stage) {
+        if (stage==2) definer = new DefinerStage2Main(rndSecuence, numbersHistory, definedIndexes, cowContainer, definedPositions);
         this.stage = stage;
     }
 }

@@ -1,4 +1,4 @@
-package logic.definers;
+package logic.stage1;
 
 import logic.NumberFactory;
 import logic.NumberWithCowsAmount;
@@ -9,35 +9,34 @@ import java.util.HashMap;
 /**
  * Created by Windows on 22.12.2015.
  */
-public class DefinerDeep2 extends Definer {
+public class DefinerStage1Deep2 extends DefinerStage1 {
 
-    private Definer definerDeep3;
+    private DefinerStage1 definerStage1Deep3;
     private boolean isDefinerInitialized;
 
-    public DefinerDeep2(Integer[] rndSecuence, ArrayList<NumberWithCowsAmount> numbersHistory, HashMap<Integer, Boolean> definedDigits, int stepNumber){
+    public DefinerStage1Deep2(Integer[] rndSecuence, ArrayList<NumberWithCowsAmount> numbersHistory, HashMap<Integer, Boolean> definedDigits, int stepNumber){
         super(rndSecuence, numbersHistory, definedDigits, stepNumber);
     }
 
     @Override
-    public int getNumber() throws DefinerException{
-     //   log.debug(stepNumber+ " " + (numbersHistory.size()-1));
+    public int getNumber() {
         if(stepNumber<=numbersHistory.size()-1) return handleResults();
         else return getNumberFromCurrentDefiner();
     }
 
-    private int handleResults() throws DefinerException{
-        if (isDefinerInitialized) return definerDeep3.getNumber();
+    private int handleResults() {
+        if (isDefinerInitialized) return definerStage1Deep3.getNumber();
         else {
             x2z1_X3[0] = getRes(stepNumber) - y1y2_Z3[0];
             z2x1_Y3[0] = x1x2_X1[0] + y1y2_Y1[0] + z1z2_Z1[0] - x2z1_X3[0] - y1y2_Z3[0];
-            definerDeep3 = new DefinerDeep3(rndSecuence, numbersHistory, definedDigits, numbersHistory.size());
-            definerDeep3.setVariables(x1x2_X1, y1y2_Y1, z1z2_Z1, y2x1_X2, x2y1_Y2, z1z2_Z2, x2z1_X3, z2x1_Y3, y1y2_Z3);
+            definerStage1Deep3 = new DefinerStage1Deep3(rndSecuence, numbersHistory, definedIndexes, numbersHistory.size());
+            definerStage1Deep3.setVariables(x1x2_X1, y1y2_Y1, z1z2_Z1, y2x1_X2, x2y1_Y2, z1z2_Z2, x2z1_X3, z2x1_Y3, y1y2_Z3);
             isDefinerInitialized = true;
-            return definerDeep3.getNumber();
+            return definerStage1Deep3.getNumber();
         }
     }
 
-    private int getNumberFromCurrentDefiner() throws DefinerException{
+    private int getNumberFromCurrentDefiner() {
         if (x1x2_X1[0]==1 && y1y2_Y1[0]==1){
             if (z1z2_Z1[0]==1) return defineResults111(x1x2_X1, y1y2_Y1, z1z2_Z1);
             return defineResults11(x1x2_X1, y1y2_Y1, z1z2_Z1);
@@ -52,55 +51,52 @@ public class DefinerDeep2 extends Definer {
         }
 
         if (x1x2_X1[0]==1){
-            putIntoDefinedDigits(y1y2_Y1);
-            putIntoDefinedDigits(z1z2_Z1);
             return defineResults1(x1x2_X1, y1y2_Y1, z1z2_Z1);
         }
 
         if (y1y2_Y1[0]==1) {
-            putIntoDefinedDigits(x1x2_X1);
-            putIntoDefinedDigits(z1z2_Z1);
             return defineResults1(y1y2_Y1, z1z2_Z1, x1x2_X1);
         }
 
         if (z1z2_Z1[0]==1){
-            putIntoDefinedDigits(x1x2_X1);
-            putIntoDefinedDigits(y1y2_Y1);
             return defineResults1(z1z2_Z1, x1x2_X1, y1y2_Y1);
         }
         return -10;
     }
-    private int defineResults1(int[] xx, int[] yy, int[] zz) throws DefinerException{
+    private int defineResults1(int[] xx, int[] yy, int[] zz) {
+        putIntoDefinedDigits(yy);
+        putIntoDefinedDigits(zz);
+
         if (yy[0]==2){
             if (y2x1_X2[0] - 1 == 1) {
-                definedDigits.put(xx[1], true);
-                definedDigits.put(xx[2], false);
+                putDefinedDigit(xx[1], true);
+                putDefinedDigit(xx[2], false);
             }
             if (y2x1_X2[0] - 1 == 0) {
-                definedDigits.put(xx[1], false);
-                definedDigits.put(xx[2], true);
+                putDefinedDigit(xx[1], false);
+                putDefinedDigit(xx[2], true);
             }
         }
+
         if (yy[0]==0){
             if (y2x1_X2[0] - 0 == 1) {
-                definedDigits.put(xx[1], true);
-                definedDigits.put(xx[2], false);
+                putDefinedDigit(xx[1], true);
+                putDefinedDigit(xx[2], false);
             }
             if (y2x1_X2[0] - 0 == 0) {
-                definedDigits.put(xx[1], false);
-                definedDigits.put(xx[2], true);
+                putDefinedDigit(xx[1], false);
+                putDefinedDigit(xx[2], true);
             }
         }
 
         toLogResDefinedDigits("4");
         NumberFactory n = NumberFactory.getInstance();
         n.setStage(2);
-        return n.getARandomNumber();
+        return n.getNumber();
     }
 
-    private int defineResults11(int[] xx, int[] yy, int[] zz) throws DefinerException{
+    private int defineResults11(int[] xx, int[] yy, int[] zz) {
         if (y2x1_X2[0]== 0) {
-            log.debug("Я здесь! " +  x2y1_Y2[0]);
             putIntoDefinedDigits(y2x1_X2);
             putIntoDefinedDigits(x2y1_Y2);
             putIntoDefinedDigits(z1z2_Z2);
@@ -117,11 +113,10 @@ public class DefinerDeep2 extends Definer {
         toLogResDefinedDigits("3");
         NumberFactory n = NumberFactory.getInstance();
         n.setStage(2);
-        return n.getARandomNumber();
+        return n.getNumber();
     }
 
-    private int defineResults111(int[] xx, int[] yy, int[] zz) throws DefinerException{
-
+    private int defineResults111(int[] xx, int[] yy, int[] zz) {
         return createNewNumber(zz, xx, yy);
     }
 
@@ -138,12 +133,12 @@ public class DefinerDeep2 extends Definer {
 
     private void putIntoDefinedDigits(int[] x){
         if (x[0]==0) {
-            definedDigits.put(x[1], false);
-            definedDigits.put(x[2], false);
+            putDefinedDigit(x[1], false);
+            putDefinedDigit(x[2], false);
         }
         if (x[0]==2) {
-            definedDigits.put(x[1], true);
-            definedDigits.put(x[2], true);
+            putDefinedDigit(x[1], true);
+            putDefinedDigit(x[2], true);
         }
     }
 }

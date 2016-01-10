@@ -1,5 +1,6 @@
-package logic.definers;
+package logic.stage1;
 
+import logic.Definer;
 import logic.NumberWithCowsAmount;
 import org.apache.log4j.Logger;
 
@@ -9,18 +10,18 @@ import java.util.HashMap;
 /**
  * Created by Windows on 20.12.2015.
  */
-public abstract class Definer {
+public abstract class DefinerStage1 implements Definer {
 
-    protected static final Logger log = Logger.getLogger(Definer.class);
-    protected HashMap<Integer, Boolean> definedDigits;
+    protected static final Logger log = Logger.getLogger(DefinerStage1.class);
+    protected HashMap<Integer, Boolean> definedIndexes;
     protected Integer[] rndSecuence;
     protected ArrayList<NumberWithCowsAmount> numbersHistory;
     protected int stepNumber;
 
-    public Definer(Integer[] rndSecuence, ArrayList<NumberWithCowsAmount> numbersHistory, HashMap<Integer, Boolean> definedDigits, int stepNumber) {
+    public DefinerStage1(Integer[] rndSecuence, ArrayList<NumberWithCowsAmount> numbersHistory, HashMap<Integer, Boolean> definedIndexes, int stepNumber) {
         this.rndSecuence = rndSecuence;
         this.numbersHistory = numbersHistory;
-        this.definedDigits = definedDigits;
+        this.definedIndexes = definedIndexes;
         this.stepNumber = stepNumber;
     }
 
@@ -70,7 +71,13 @@ public abstract class Definer {
         return num;
     }
 
-    public abstract int getNumber() throws DefinerException;
+    protected void putDefinedDigit(Integer index, boolean existsDigitOrNot){
+      //  definedIndexes.put(rndSecuence[index], existsDigitOrNot);
+        definedIndexes.put(index, existsDigitOrNot);
+    }
+
+    @Override
+    public abstract int getNumber();
 
     protected int getRes(int indexOfNumbersHistoryList){
         return numbersHistory.get(indexOfNumbersHistoryList).getResultSum();
@@ -80,13 +87,13 @@ public abstract class Definer {
         return numbersHistory;
     }
 
-    public HashMap<Integer, Boolean> getDefinedDigits() {
-        return definedDigits;
+    public HashMap<Integer, Boolean> getDefinedIndexes() {
+        return definedIndexes;
     }
 
     public void toLogResDefinedDigits(String logID){
-        for (Integer i : definedDigits.keySet()){
-            log.debug("Result of stage1: digit " + i +  " is: " + definedDigits.get(i) + " logId: " + logID);
+        for (Integer i : definedIndexes.keySet()){
+            log.debug("Result of stage1: digit " + i +  " is: " + definedIndexes.get(i) + " logId: " + logID);
         }
     }
 
