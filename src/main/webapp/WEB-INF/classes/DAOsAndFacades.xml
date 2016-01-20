@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <bean name="computerNumberDAO" class="game.dao.ComputerNumberDAOImpl">
+        <property name="template" ref="hibernateTemplate" />
+    </bean>
+
+    <bean name="computerNumberFacade" parent="abstractTransactionProxy">
+        <property name="target">
+            <bean class="game.facade.ComputerNumberFacade">
+                <property name="numberDAO" ref="computerNumberDAO" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean name="playerDAO" class="game.dao.PlayerDAOImpl">
+        <property name="template" ref="hibernateTemplate" />
+    </bean>
+
+    <bean name="playerFacade" parent="abstractTransactionProxy">
+        <property name="target">
+            <bean class="game.facade.PlayerFacade">
+                <property name="playerDAO" ref="playerDAO" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean name="gameDAO" class="game.dao.GameDAOImpl">
+        <property name="template" ref="hibernateTemplate" />
+    </bean>
+
+    <bean name="gameFacade" parent="abstractTransactionProxy">
+        <property name="target">
+            <bean class="game.facade.GameFacade">
+                <property name="gameDAO" ref="gameDAO" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean name="playerNumberDAO" class="game.dao.PlayerNumberDAOImpl">
+        <property name="template" ref="hibernateTemplate" />
+    </bean>
+
+    <bean name="playerNumberFacade" parent="abstractTransactionProxy">
+        <property name="target">
+            <bean class="game.facade.PlayerNumberFacade">
+                <property name="numberDAO" ref="playerNumberDAO" />
+            </bean>
+        </property>
+    </bean>
+
+</beans>
