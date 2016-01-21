@@ -25,10 +25,16 @@
 			1234 - 1 бык(3), 1 корова(4). Цифры в скобках даны для понимания, в игре они не даются.<br/>
 			3321 - 1 бык(3), 1 корова(3). Цифры в скобках даны для понимания, в игре они не даются.<br/>
 			4333 - 4 быка. Число отгадано.
-		</p>
-		<H4>Game started!</H4>
-		<br/>
-		<H5>История ходов:</H5>
+			</p>
+		<H4>PS: Обращаю внимание, что если количество быков или коров будет введено неверно хотя бы один раз, Ваше число будет отгадано неверно или не будет отгадано вовсе. <br/>
+        	Поэтому будьте внимательны. Если Вы выиграли, проверьте все Ваши предыдущие ходы на правильность. Алгоритму требутеся не более 12(максимум, в среднем - 8..10) ходов, чтобы разгадать любое загаданное Вами число</H4>
+
+		<form action="<c:url value="/gamePage"/>" method="POST">
+			Начать игру заново: <input type="submit" name="newGame" value="New Game"/>
+		</form>
+
+		<H3>Game started!</H3>
+		<H4>История ходов:</H4>
 
 		<c:forEach var="numberViewPlayer" items="${pageView.playerList}">
 			<p>Ход№: <c:out value="${numberViewPlayer.step}"/>, <c:out value="${numberViewPlayer.playerName}"/>, Запрошенное число:
@@ -44,7 +50,7 @@
 
 
 		<form action="<c:url value="/gamePage"/>" method="POST">
-			Отметьте, сколько быков и коров в данном числе: <c:out value="${pageView.stringNumber}"/> <input type="hidden" name="previousStepPCNumber" value='<c:out value="${pageView.stringNumber}"/>'> <br/>
+			Отметьте, сколько быков и коров в данном числе: <c:out value="${pageView.stringNumber}"/> (относительно загаданного Вами числа)<input type="hidden" name="previousStepPCNumber" value='<c:out value="${pageView.stringNumber}"/>'> <br/>
 				<table>
 					<td><input type="radio" name="cow" value="0" checked> Ноль коров <br/>
 						<input type="radio" name="cow" value="1"> Одна корова <br/>

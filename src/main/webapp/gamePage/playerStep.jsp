@@ -26,26 +26,34 @@
 			3321 - 1 бык(3), 1 корова(3). Цифры в скобках даны для понимания, в игре они не даются.<br/>
 			4333 - 4 быка. Число отгадано.
 		</p>
-		<H4>Game started!</H4>
-		<br/>
-		<H5>История ходов:</H5>
+		<H4>PS: Обращаю внимание, что если количество быков или коров будет введено неверно хотя бы один раз, Ваше число будет отгадано неверно или не будет отгадано вовсе. <br/>
+        	Поэтому будьте внимательны. Если Вы выиграли, проверьте все Ваши предыдущие ходы на правильность. Алгоритму требутеся не более 12(максимум, в среднем - 8..10) ходов, чтобы разгадать любое загаданное Вами число</H4>
+
+		<form action="<c:url value="/gamePage"/>" method="POST">
+			Начать игру заново: <input type="submit" name="newGame" value="New Game"/>
+		</form>
+
+		<H3>Game started!</H3>
+		<H4>История ходов:</H4>
 
 		<c:forEach var="numberViewPlayer" items="${pageView.playerList}">
 			<p>Ход№: <c:out value="${numberViewPlayer.step}"/>, <c:out value="${numberViewPlayer.playerName}"/>, Запрошенное число:
 				<c:out value="${numberViewPlayer.number}"/>, количество коров: <c:out value="${numberViewPlayer.cows}"/>, количество быков: <c:out value="${numberViewPlayer.bulls}"/> </p>
 		</c:forEach>
+
+		<form action="<c:url value="/gamePage"/>" method="POST">
+        	Введите четырехзначное число:<input type="number" name="playerNumber" pattern="[0-9]{4}"/> </br>
+        	<input type="submit" name="sendInfo" value="Ввести"/>
+        </form>
+
 		<br/>
 		<br/>
 		<c:forEach var="numberViewComputer" items="${pageView.computerList}">
 			<p>Ход№: <c:out value="${numberViewComputer.step}"/>, <c:out value="${numberViewComputer.playerName}"/>, Запрошенное число:
 				<c:out value="${numberViewComputer.number}"/>, количество коров: <c:out value="${numberViewComputer.cows}"/>, количество быков: <c:out value="${numberViewComputer.bulls}"/> </p>
 		</c:forEach>
-		
 
-		<form action="<c:url value="/gamePage"/>" method="POST">
-			Введите Ваше четырехзначное число:<input type="number" name="playerNumber" pattern="[0-9]{4}"/> </br>
-			<input type="submit" name="sendInfo" value="Ввести"/>
-		</form>
+
 
 
     </body>

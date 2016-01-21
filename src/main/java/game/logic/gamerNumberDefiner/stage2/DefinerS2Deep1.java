@@ -14,8 +14,11 @@ public class DefinerS2Deep1 extends DefinerS2 {
     private NumberParametersS2 previousParameters;
     private NumberParametersS2 currentParameters;
 
-    public DefinerS2Deep1(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedIndexes,
-                          HashMap<Integer, CowInfo> cowContainer, HashMap<Byte, Integer> definedPositions) {
+    public DefinerS2Deep1(Integer[] rndSecuence,
+                          ArrayList<NumberInfo> numbersHistory,
+                          HashMap<Integer, Boolean> definedIndexes,
+                          HashMap<Integer, CowInfo> cowContainer,
+                          HashMap<Byte, Integer> definedPositions) {
         super(rndSecuence, numbersHistory, definedIndexes, cowContainer, definedPositions);
     }
 

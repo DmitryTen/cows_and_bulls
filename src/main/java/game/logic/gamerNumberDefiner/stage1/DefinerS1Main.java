@@ -17,15 +17,18 @@ public class DefinerS1Main extends DefinerS1 {
     private DefinerS1 definerS1Deep1;
 
 
-    public DefinerS1Main(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedDigits, NumberDefiner numberDefiner){
-        super(rndSecuence, numbersHistory, definedDigits, 0, numberDefiner);
+    public DefinerS1Main(Integer[] rndSecuence,
+                         ArrayList<NumberInfo> numbersHistory,
+                         HashMap<Integer, Boolean> definedDigits,
+                         NumberDefiner numberDefiner)   {
+        super(rndSecuence, numbersHistory, definedDigits, numberDefiner);
     }
 
     public int getNumber (){
         if (numbersHistory.size()==0) return assembleByIndexes(1,2,3,4);
 
         if (getRes(numbersHistory.size() - 1)==0 && numbersHistory.size()<=2) return goToAnotherStageFalse();
-        if (getRes(numbersHistory.size() - 1)==4) return goToAnotherStageTrue();
+        if (getRes(0)==4) return goToAnotherStageTrue();
 
         if (numbersHistory.size()==1) return assembleByIndexes(x[1], x[2], y[1], y[2]);
         if (numbersHistory.size()==2) return assembleByIndexes(z[1],z[2],x[1],x[2]);

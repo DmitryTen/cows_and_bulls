@@ -13,25 +13,30 @@ public class DefinerS1Deep2 extends DefinerS1 {
 
     private DefinerS1 definerS1Deep3;
     private boolean isDefinerInitialized;
+    private int stepNumberDeep2;
 
-    public DefinerS1Deep2(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedDigits, int stepNumber, NumberDefiner numberDefiner){
-        super(rndSecuence, numbersHistory, definedDigits, stepNumber, numberDefiner);
+    public DefinerS1Deep2(Integer[] rndSecuence,
+                          ArrayList<NumberInfo> numbersHistory,
+                          HashMap<Integer, Boolean> definedDigits,
+                          int stepNumberDeep2,
+                          NumberDefiner numberDefiner)  {
+        super(rndSecuence, numbersHistory, definedDigits, numberDefiner);
+        this.stepNumberDeep2 = stepNumberDeep2;
     }
 
     @Override
     public int getNumber() {
-        if(stepNumber<=numbersHistory.size()-1) return handleResults();
+        if(definerS1Deep3 != null) return handleResults();
         else return getNumberFromCurrentDefiner();
     }
 
     private int handleResults() {
         if (isDefinerInitialized) return definerS1Deep3.getNumber();
         else {
-            x2z1_X3[0] = getRes(stepNumber) - y1y2_Z3[0];
-            z2x1_Y3[0] = x1x2_X1[0] + y1y2_Y1[0] + z1z2_Z1[0] - x2z1_X3[0] - y1y2_Z3[0];
-            definerS1Deep3 = new DefinerS1Deep3(rndSecuence, numbersHistory, definedIndexes, numbersHistory.size(), numberDefiner);
-            definerS1Deep3.setVariables(x1x2_X1, y1y2_Y1, z1z2_Z1, y2x1_X2, x2y1_Y2, z1z2_Z2, x2z1_X3, z2x1_Y3, y1y2_Z3);
             isDefinerInitialized = true;
+            x2z1_X3[0] = getRes(stepNumberDeep2) - y1y2_Z3[0];
+            z2x1_Y3[0] = x1x2_X1[0] + y1y2_Y1[0] + z1z2_Z1[0] - x2z1_X3[0] - y1y2_Z3[0];
+            definerS1Deep3.setVariables(x1x2_X1, y1y2_Y1, z1z2_Z1, y2x1_X2, x2y1_Y2, z1z2_Z2, x2z1_X3, z2x1_Y3, y1y2_Z3);
             return definerS1Deep3.getNumber();
         }
     }
@@ -126,6 +131,7 @@ public class DefinerS1Deep2 extends DefinerS1 {
         x2z1_X3[2] = equals1X[1];
         z2x1_Y3[1] = equals1X[2];
         z2x1_Y3[2] = equals1Y[1];
+        definerS1Deep3 = new DefinerS1Deep3(rndSecuence, numbersHistory, definedIndexes, stepNumberDeep2+1, numberDefiner);
         return assembleByIndexes(equals1Y[2], someZ[1], someZ[2], equals1X[1]);
     }
 

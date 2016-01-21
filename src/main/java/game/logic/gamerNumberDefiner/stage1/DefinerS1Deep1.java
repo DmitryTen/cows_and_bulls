@@ -13,26 +13,30 @@ public class DefinerS1Deep1 extends DefinerS1 {
 
     private DefinerS1 definerS1Deep2;
     private boolean isDefinerInitialized;
+    private int stepNumberDeep1;
 
-    public DefinerS1Deep1(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedDigits, int stepNumber, NumberDefiner numberDefiner){
-        super(rndSecuence, numbersHistory, definedDigits, stepNumber, numberDefiner);
+    public DefinerS1Deep1(Integer[] rndSecuence,
+                          ArrayList<NumberInfo> numbersHistory,
+                          HashMap<Integer, Boolean> definedDigits,
+                          int stepNumberDeep1,
+                          NumberDefiner numberDefiner)    {
+        super(rndSecuence, numbersHistory, definedDigits, numberDefiner);
+        this.stepNumberDeep1 = stepNumberDeep1;
     }
 
     @Override
     public int getNumber() {
-        if(stepNumber<=numbersHistory.size()-1) return handleResults();
+        if(definerS1Deep2 != null) return handleResults();
         else return getNumberFromCurrentDefiner();
     }
 
     private int handleResults() {
         if (isDefinerInitialized) return definerS1Deep2.getNumber();
         else {
-            y2x1_X2[0] = getRes(stepNumber) - z1z2_Z2[0];
-            x2y1_Y2[0] = x1x2_X1[0] + y1y2_Y1[0] + z1z2_Z1[0] - y2x1_X2[0] - z1z2_Z2[0];
-            definerS1Deep2 = new DefinerS1Deep2(rndSecuence, numbersHistory, definedIndexes, numbersHistory.size(), numberDefiner)                                                                                                                                         ;
-            definerS1Deep2.setVariables(x1x2_X1, y1y2_Y1, z1z2_Z1, y2x1_X2, x2y1_Y2, z1z2_Z2);
-
             isDefinerInitialized = true;
+            y2x1_X2[0] = getRes(stepNumberDeep1) - z1z2_Z2[0];
+            x2y1_Y2[0] = x1x2_X1[0] + y1y2_Y1[0] + z1z2_Z1[0] - y2x1_X2[0] - z1z2_Z2[0];
+            definerS1Deep2.setVariables(x1x2_X1, y1y2_Y1, z1z2_Z1, y2x1_X2, x2y1_Y2, z1z2_Z2);
             return definerS1Deep2.getNumber();
         }
     }
@@ -68,6 +72,7 @@ public class DefinerS1Deep1 extends DefinerS1 {
         y2x1_X2[2] = mixingX[1];
         x2y1_Y2[1] = mixingX[2];
         x2y1_Y2[2] = mixingY[1];
+        definerS1Deep2 = new DefinerS1Deep2(rndSecuence, numbersHistory, definedIndexes, stepNumberDeep1+1, numberDefiner);
         return assembleByIndexes(mixingY[2], sameZ[1], sameZ[2], mixingX[1]);
     }
 

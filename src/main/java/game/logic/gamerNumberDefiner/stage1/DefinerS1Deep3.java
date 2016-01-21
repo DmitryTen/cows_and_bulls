@@ -11,19 +11,26 @@ import java.util.HashMap;
  */
 public class DefinerS1Deep3 extends DefinerS1 {
 
-    public DefinerS1Deep3(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedDigits, int stepNumber, NumberDefiner numberDefiner){
-        super(rndSecuence, numbersHistory, definedDigits, stepNumber, numberDefiner);
+    private int stepNumberDeep3;
+
+    public DefinerS1Deep3(Integer[] rndSecuence,
+                          ArrayList<NumberInfo> numbersHistory,
+                          HashMap<Integer, Boolean> definedDigits,
+                          int stepNumberDeep3,
+                          NumberDefiner numberDefiner)  {
+        super(rndSecuence, numbersHistory, definedDigits, numberDefiner);
+        this.stepNumberDeep3 = stepNumberDeep3;
     }
 
     @Override
     public int getNumber() {
-        if(stepNumber<=
+        if(stepNumberDeep3 <=
                 numbersHistory.size()-1) return handleResults();
         else return getNumberFromCurrentDefiner();
     }
 
     private int handleResults() {
-        if (getRes(stepNumber)==3){
+        if (getRes(stepNumberDeep3)==3){
             putDefinedDigit(x1x2_X1[1], true);
             putDefinedDigit(x1x2_X1[2], false);
             putDefinedDigit(y1y2_Y1[1], true);
@@ -32,7 +39,7 @@ public class DefinerS1Deep3 extends DefinerS1 {
             putDefinedDigit(z1z2_Z1[2], false);
         }
 
-        if (getRes(stepNumber)==1){
+        if (getRes(stepNumberDeep3)==1){
             putDefinedDigit(x1x2_X1[1], false);
             putDefinedDigit(x1x2_X1[2], true);
             putDefinedDigit(y1y2_Y1[1], false);

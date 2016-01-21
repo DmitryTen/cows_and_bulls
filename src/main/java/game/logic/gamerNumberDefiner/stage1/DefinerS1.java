@@ -17,14 +17,13 @@ public abstract class DefinerS1 implements Definer {
     protected HashMap<Integer, Boolean> definedIndexes;
     protected Integer[] rndSecuence;
     protected ArrayList<NumberInfo> numbersHistory;
-    protected int stepNumber;
+
     protected NumberDefiner numberDefiner;
 
-    public DefinerS1(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedIndexes, int stepNumber, NumberDefiner numberDefiner) {
+    public DefinerS1(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedIndexes, NumberDefiner numberDefiner) {
         this.rndSecuence = rndSecuence;
         this.numbersHistory = numbersHistory;
         this.definedIndexes = definedIndexes;
-        this.stepNumber = stepNumber;
         this.numberDefiner = numberDefiner;
     }
 
@@ -68,8 +67,13 @@ public abstract class DefinerS1 implements Definer {
     }
 
     protected final int assembleByIndexes(int index1, int index2, int index3, int index4){
-        int num = rndSecuence[index1]*1000 + rndSecuence[index2]*100 + rndSecuence[index3]*10 + rndSecuence[index4];
+        int num = rndSecuence[index1]*1000
+                + rndSecuence[index2]*100
+                + rndSecuence[index3]*10
+                + rndSecuence[index4];
+
         numbersHistory.add(new NumberInfo(num, index1, index2, index3, index4, numbersHistory.size()+1));
+
         log.debug("Received indexes: " + index1 + ", " + index2 + ", " + index3 + ", " + index4 + ", Created number:" + num);
         return num;
     }

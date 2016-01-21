@@ -22,8 +22,12 @@ public class DefinerS2Main extends DefinerS2 implements Definer {
     private NumberDefiner numberDefiner;
 
 
-    public DefinerS2Main(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedIndexes,
-                         HashMap<Integer, CowInfo> cowContainer, HashMap<Byte, Integer> definedPositions, NumberDefiner numberDefiner) {
+    public DefinerS2Main(Integer[] rndSecuence,
+                         ArrayList<NumberInfo> numbersHistory,
+                         HashMap<Integer, Boolean> definedIndexes,
+                         HashMap<Integer, CowInfo> cowContainer,
+                         HashMap<Byte, Integer> definedPositions,
+                         NumberDefiner numberDefiner) {
         super(rndSecuence, numbersHistory, definedIndexes, cowContainer, definedPositions);
         this.numberDefiner = numberDefiner;
     }

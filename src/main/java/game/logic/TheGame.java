@@ -31,6 +31,7 @@ public class TheGame {
 
     public PlayerNumber handlePlayersNumberReturnDBEntity(int number){
         playersStep++;
+        if(number>=10000) number = number%10000;
         PlayerNumber playerNumber = new PlayerNumber(number, game, playersStep);
         comp.fillDBEntityByBullsAndCows(playerNumber);
         if (playerNumber.getBullsAmount()==4) theLastStep = true;

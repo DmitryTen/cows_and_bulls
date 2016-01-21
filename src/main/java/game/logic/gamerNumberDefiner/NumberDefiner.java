@@ -22,7 +22,6 @@ public class NumberDefiner {
     private int stage = 1;
     private Definer definer;
 
-
     public NumberDefiner() {
         fillRndSecuence();
         numbersHistory = new ArrayList<>();
@@ -76,7 +75,7 @@ public class NumberDefiner {
            return definer.getNumber();
         }
         if (stage==3) {
-            return getFinalNumber();
+            return putFinalNumberIntoNumbersHistory();
         }
         return 0;
     }
@@ -97,8 +96,20 @@ public class NumberDefiner {
         this.stage = stage;
     }
 
-    private int getFinalNumber(){
-        return definedPositions.get((byte)0)*1000 + definedPositions.get((byte)1)*100 + definedPositions.get((byte)2)*10 + definedPositions.get((byte)3);
+    private int putFinalNumberIntoNumbersHistory(){
+        int num = rndSecuence[definedPositions.get((byte)0)]*1000
+                + rndSecuence[definedPositions.get((byte)1)]*100
+                + rndSecuence[definedPositions.get((byte)2)]*10
+                + rndSecuence[definedPositions.get((byte)3)];
+
+        numbersHistory.add(new NumberInfo(num,
+                definedPositions.get((byte)0),
+                definedPositions.get((byte)1),
+                definedPositions.get((byte)2),
+                definedPositions.get((byte)3),
+                numbersHistory.size()+1));
+
+        return num;
     }
 
     public String revealNumProposedByPlayer() {

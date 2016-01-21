@@ -32,10 +32,6 @@ public class MainController extends AbstractController {
     private ComputerNumberFacade computerNumberFacade;
     private PlayerNumberFacade playerNumberFacade;
 
-    /*  private NumberDefiner gamerNumber;
-    private CowBullDefiner computerNumber;
-    private Game game;*/
-
     private static HashMap<String, Player> sessionIdGamer = new HashMap<String, Player>();
 
     public void setGameFacade(GameFacade gameFacade) {
@@ -57,7 +53,6 @@ public class MainController extends AbstractController {
     @Override
     protected ModelAndView handleRequestInternal(HttpServletRequest arg0, HttpServletResponse arg1)
             throws Exception {
-        log.debug("============================================= Entrance to MainController =============================================");
         HttpSession session = arg0.getSession();
 
         if (session.isNew()) {
@@ -87,8 +82,7 @@ public class MainController extends AbstractController {
             return new ModelAndView("gamePage/playerStep");
         }
 
-        log.debug("============================================= return NULL =============================================");
-        return null;
+        return new ModelAndView("gamePage/authorisation");
     }
 
     private Player createPlayer(String name){

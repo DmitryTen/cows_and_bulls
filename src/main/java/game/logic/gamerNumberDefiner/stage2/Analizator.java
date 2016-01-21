@@ -16,7 +16,9 @@ public class Analizator {
     protected HashMap<Byte, Integer> definedPositions;
     protected ArrayList<NumberInfo> numbersHistory;
 
-    public Analizator(HashMap<Integer, Boolean> definedIndexes, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, CowInfo> cowContainer,
+    public Analizator(HashMap<Integer, Boolean> definedIndexes,
+                      ArrayList<NumberInfo> numbersHistory,
+                      HashMap<Integer, CowInfo> cowContainer,
                       HashMap<Byte, Integer> definedPositions) {
         this.definedIndexes = definedIndexes;
         this.cowContainer = cowContainer;

@@ -132,7 +132,7 @@
 2016-01-20 13:32:15 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 13:32:15 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 13:32:15 DEBUG Printer:83 - listing entities:
-2016-01-20 13:32:15 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#16, index1=7, num=4328, index3=2, generalId=31, index2=1, cowsAmount=0, index4=7, stepNumber=6, bullsAmount=4}
+2016-01-20 13:32:15 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#16, index1=7, num=4328, index3=2, generalId=31, index2=1, cowsAmount=0, index4=7, stepNumberDeep2=6, bullsAmount=4}
 2016-01-20 13:32:15 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 13:32:15 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 13:32:15 DEBUG ConnectionManager:478 - registering flush end
@@ -733,7 +733,7 @@ Stacktrace:]
 2016-01-20 13:41:06 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 13:41:06 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 13:41:06 DEBUG Printer:83 - listing entities:
-2016-01-20 13:41:06 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#16, index1=7, num=4328, index3=2, generalId=32, index2=1, cowsAmount=0, index4=7, stepNumber=6, bullsAmount=4}
+2016-01-20 13:41:06 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#16, index1=7, num=4328, index3=2, generalId=32, index2=1, cowsAmount=0, index4=7, stepNumberDeep2=6, bullsAmount=4}
 2016-01-20 13:41:06 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 13:41:06 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 13:41:06 DEBUG ConnectionManager:478 - registering flush end
@@ -1550,12 +1550,12 @@ Stacktrace:]
 2016-01-20 13:43:49 DEBUG SimpleValueBinder:220 - building SimpleValue for num
 2016-01-20 13:43:49 DEBUG PropertyBinder:128 - Building property num
 2016-01-20 13:43:49 DEBUG PropertyBinder:172 - Cascading num with null
-2016-01-20 13:43:49 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.ComputerNumber.stepNumber
+2016-01-20 13:43:49 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.ComputerNumber.stepNumberDeep2
 2016-01-20 13:43:49 DEBUG Ejb3Column:161 - Binding column local_id unique false
-2016-01-20 13:43:49 DEBUG PropertyBinder:106 - binding property stepNumber with lazy=false
-2016-01-20 13:43:49 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumber
-2016-01-20 13:43:49 DEBUG PropertyBinder:128 - Building property stepNumber
-2016-01-20 13:43:49 DEBUG PropertyBinder:172 - Cascading stepNumber with null
+2016-01-20 13:43:49 DEBUG PropertyBinder:106 - binding property stepNumberDeep2 with lazy=false
+2016-01-20 13:43:49 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumberDeep2
+2016-01-20 13:43:49 DEBUG PropertyBinder:128 - Building property stepNumberDeep2
+2016-01-20 13:43:49 DEBUG PropertyBinder:172 - Cascading stepNumberDeep2 with null
 2016-01-20 13:43:49 INFO  AnnotationBinder:398 - Binding entity from annotated class: game.entity.PlayerNumber
 2016-01-20 13:43:49 DEBUG Ejb3Column:161 - Binding column DTYPE unique false
 2016-01-20 13:43:49 DEBUG EntityBinder:292 - Import with entity name=PlayerNumber
@@ -1592,12 +1592,12 @@ Stacktrace:]
 2016-01-20 13:43:49 DEBUG SimpleValueBinder:220 - building SimpleValue for num
 2016-01-20 13:43:49 DEBUG PropertyBinder:128 - Building property num
 2016-01-20 13:43:49 DEBUG PropertyBinder:172 - Cascading num with null
-2016-01-20 13:43:49 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.PlayerNumber.stepNumber
+2016-01-20 13:43:49 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.PlayerNumber.stepNumberDeep2
 2016-01-20 13:43:49 DEBUG Ejb3Column:161 - Binding column local_id unique false
-2016-01-20 13:43:49 DEBUG PropertyBinder:106 - binding property stepNumber with lazy=false
-2016-01-20 13:43:49 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumber
-2016-01-20 13:43:49 DEBUG PropertyBinder:128 - Building property stepNumber
-2016-01-20 13:43:49 DEBUG PropertyBinder:172 - Cascading stepNumber with null
+2016-01-20 13:43:49 DEBUG PropertyBinder:106 - binding property stepNumberDeep2 with lazy=false
+2016-01-20 13:43:49 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumberDeep2
+2016-01-20 13:43:49 DEBUG PropertyBinder:128 - Building property stepNumberDeep2
+2016-01-20 13:43:49 DEBUG PropertyBinder:172 - Cascading stepNumberDeep2 with null
 2016-01-20 13:43:49 DEBUG AnnotationConfiguration:375 - processing manytoone fk mappings
 2016-01-20 13:43:49 DEBUG Configuration:1120 - processing extends queue
 2016-01-20 13:43:49 DEBUG Configuration:1124 - processing collection mappings
@@ -2486,7 +2486,7 @@ Stacktrace:]
 2016-01-20 13:44:10 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 13:44:10 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 13:44:10 DEBUG Printer:83 - listing entities:
-2016-01-20 13:44:10 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#17, num=2341, generalId=39, cowsAmount=1, stepNumber=1, bullsAmount=0}
+2016-01-20 13:44:10 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#17, num=2341, generalId=39, cowsAmount=1, stepNumberDeep2=1, bullsAmount=0}
 2016-01-20 13:44:10 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 13:44:10 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 13:44:10 DEBUG ConnectionManager:478 - registering flush end
@@ -2903,7 +2903,7 @@ Stacktrace:]
 2016-01-20 13:44:14 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 13:44:14 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 13:44:14 DEBUG Printer:83 - listing entities:
-2016-01-20 13:44:14 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#17, index1=1, num=8965, index3=3, generalId=33, index2=2, cowsAmount=0, index4=4, stepNumber=1, bullsAmount=4}
+2016-01-20 13:44:14 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#17, index1=1, num=8965, index3=3, generalId=33, index2=2, cowsAmount=0, index4=4, stepNumberDeep2=1, bullsAmount=4}
 2016-01-20 13:44:14 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 13:44:14 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 13:44:14 DEBUG ConnectionManager:478 - registering flush end
@@ -3431,12 +3431,12 @@ Stacktrace:]
 2016-01-20 14:05:19 DEBUG SimpleValueBinder:220 - building SimpleValue for num
 2016-01-20 14:05:19 DEBUG PropertyBinder:128 - Building property num
 2016-01-20 14:05:19 DEBUG PropertyBinder:172 - Cascading num with null
-2016-01-20 14:05:19 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.ComputerNumber.stepNumber
+2016-01-20 14:05:19 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.ComputerNumber.stepNumberDeep2
 2016-01-20 14:05:19 DEBUG Ejb3Column:161 - Binding column local_id unique false
-2016-01-20 14:05:19 DEBUG PropertyBinder:106 - binding property stepNumber with lazy=false
-2016-01-20 14:05:19 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumber
-2016-01-20 14:05:19 DEBUG PropertyBinder:128 - Building property stepNumber
-2016-01-20 14:05:19 DEBUG PropertyBinder:172 - Cascading stepNumber with null
+2016-01-20 14:05:19 DEBUG PropertyBinder:106 - binding property stepNumberDeep2 with lazy=false
+2016-01-20 14:05:19 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumberDeep2
+2016-01-20 14:05:19 DEBUG PropertyBinder:128 - Building property stepNumberDeep2
+2016-01-20 14:05:19 DEBUG PropertyBinder:172 - Cascading stepNumberDeep2 with null
 2016-01-20 14:05:19 INFO  AnnotationBinder:398 - Binding entity from annotated class: game.entity.PlayerNumber
 2016-01-20 14:05:19 DEBUG Ejb3Column:161 - Binding column DTYPE unique false
 2016-01-20 14:05:19 DEBUG EntityBinder:292 - Import with entity name=PlayerNumber
@@ -3473,12 +3473,12 @@ Stacktrace:]
 2016-01-20 14:05:19 DEBUG SimpleValueBinder:220 - building SimpleValue for num
 2016-01-20 14:05:19 DEBUG PropertyBinder:128 - Building property num
 2016-01-20 14:05:19 DEBUG PropertyBinder:172 - Cascading num with null
-2016-01-20 14:05:19 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.PlayerNumber.stepNumber
+2016-01-20 14:05:19 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.PlayerNumber.stepNumberDeep2
 2016-01-20 14:05:19 DEBUG Ejb3Column:161 - Binding column local_id unique false
-2016-01-20 14:05:19 DEBUG PropertyBinder:106 - binding property stepNumber with lazy=false
-2016-01-20 14:05:19 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumber
-2016-01-20 14:05:19 DEBUG PropertyBinder:128 - Building property stepNumber
-2016-01-20 14:05:19 DEBUG PropertyBinder:172 - Cascading stepNumber with null
+2016-01-20 14:05:19 DEBUG PropertyBinder:106 - binding property stepNumberDeep2 with lazy=false
+2016-01-20 14:05:19 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumberDeep2
+2016-01-20 14:05:19 DEBUG PropertyBinder:128 - Building property stepNumberDeep2
+2016-01-20 14:05:19 DEBUG PropertyBinder:172 - Cascading stepNumberDeep2 with null
 2016-01-20 14:05:19 DEBUG AnnotationConfiguration:375 - processing manytoone fk mappings
 2016-01-20 14:05:19 DEBUG Configuration:1120 - processing extends queue
 2016-01-20 14:05:19 DEBUG Configuration:1124 - processing collection mappings
@@ -4367,7 +4367,7 @@ Stacktrace:]
 2016-01-20 14:05:38 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:05:38 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:05:38 DEBUG Printer:83 - listing entities:
-2016-01-20 14:05:38 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#18, num=1234, generalId=40, cowsAmount=2, stepNumber=1, bullsAmount=0}
+2016-01-20 14:05:38 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#18, num=1234, generalId=40, cowsAmount=2, stepNumberDeep2=1, bullsAmount=0}
 2016-01-20 14:05:38 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:05:38 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:05:38 DEBUG ConnectionManager:478 - registering flush end
@@ -4795,7 +4795,7 @@ Stacktrace:]
 2016-01-20 14:05:46 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:05:46 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:05:46 DEBUG Printer:83 - listing entities:
-2016-01-20 14:05:46 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#18, index1=1, num=2170, index3=3, generalId=34, index2=2, cowsAmount=0, index4=4, stepNumber=1, bullsAmount=4}
+2016-01-20 14:05:46 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#18, index1=1, num=2170, index3=3, generalId=34, index2=2, cowsAmount=0, index4=4, stepNumberDeep2=1, bullsAmount=4}
 2016-01-20 14:05:46 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:05:46 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:05:46 DEBUG ConnectionManager:478 - registering flush end
@@ -5215,7 +5215,7 @@ Stacktrace:]
 2016-01-20 14:06:32 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:06:32 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:06:32 DEBUG Printer:83 - listing entities:
-2016-01-20 14:06:32 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#19, num=7890, generalId=41, cowsAmount=0, stepNumber=1, bullsAmount=1}
+2016-01-20 14:06:32 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#19, num=7890, generalId=41, cowsAmount=0, stepNumberDeep2=1, bullsAmount=1}
 2016-01-20 14:06:32 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:06:32 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:06:32 DEBUG ConnectionManager:478 - registering flush end
@@ -5537,7 +5537,7 @@ Stacktrace:]
 2016-01-20 14:06:35 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:06:35 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:06:35 DEBUG Printer:83 - listing entities:
-2016-01-20 14:06:35 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#19, index1=1, num=4538, index3=3, generalId=35, index2=2, cowsAmount=0, index4=4, stepNumber=1, bullsAmount=4}
+2016-01-20 14:06:35 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#19, index1=1, num=4538, index3=3, generalId=35, index2=2, cowsAmount=0, index4=4, stepNumberDeep2=1, bullsAmount=4}
 2016-01-20 14:06:35 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:06:35 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:06:35 DEBUG ConnectionManager:478 - registering flush end
@@ -6063,12 +6063,12 @@ Stacktrace:]
 2016-01-20 14:11:46 DEBUG SimpleValueBinder:220 - building SimpleValue for num
 2016-01-20 14:11:46 DEBUG PropertyBinder:128 - Building property num
 2016-01-20 14:11:46 DEBUG PropertyBinder:172 - Cascading num with null
-2016-01-20 14:11:46 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.ComputerNumber.stepNumber
+2016-01-20 14:11:46 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.ComputerNumber.stepNumberDeep2
 2016-01-20 14:11:46 DEBUG Ejb3Column:161 - Binding column local_id unique false
-2016-01-20 14:11:46 DEBUG PropertyBinder:106 - binding property stepNumber with lazy=false
-2016-01-20 14:11:46 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumber
-2016-01-20 14:11:46 DEBUG PropertyBinder:128 - Building property stepNumber
-2016-01-20 14:11:46 DEBUG PropertyBinder:172 - Cascading stepNumber with null
+2016-01-20 14:11:46 DEBUG PropertyBinder:106 - binding property stepNumberDeep2 with lazy=false
+2016-01-20 14:11:46 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumberDeep2
+2016-01-20 14:11:46 DEBUG PropertyBinder:128 - Building property stepNumberDeep2
+2016-01-20 14:11:46 DEBUG PropertyBinder:172 - Cascading stepNumberDeep2 with null
 2016-01-20 14:11:46 INFO  AnnotationBinder:398 - Binding entity from annotated class: game.entity.PlayerNumber
 2016-01-20 14:11:46 DEBUG Ejb3Column:161 - Binding column DTYPE unique false
 2016-01-20 14:11:46 DEBUG EntityBinder:292 - Import with entity name=PlayerNumber
@@ -6105,12 +6105,12 @@ Stacktrace:]
 2016-01-20 14:11:46 DEBUG SimpleValueBinder:220 - building SimpleValue for num
 2016-01-20 14:11:46 DEBUG PropertyBinder:128 - Building property num
 2016-01-20 14:11:46 DEBUG PropertyBinder:172 - Cascading num with null
-2016-01-20 14:11:46 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.PlayerNumber.stepNumber
+2016-01-20 14:11:46 DEBUG AnnotationBinder:1086 - Processing annotations of game.entity.PlayerNumber.stepNumberDeep2
 2016-01-20 14:11:46 DEBUG Ejb3Column:161 - Binding column local_id unique false
-2016-01-20 14:11:46 DEBUG PropertyBinder:106 - binding property stepNumber with lazy=false
-2016-01-20 14:11:46 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumber
-2016-01-20 14:11:46 DEBUG PropertyBinder:128 - Building property stepNumber
-2016-01-20 14:11:46 DEBUG PropertyBinder:172 - Cascading stepNumber with null
+2016-01-20 14:11:46 DEBUG PropertyBinder:106 - binding property stepNumberDeep2 with lazy=false
+2016-01-20 14:11:46 DEBUG SimpleValueBinder:220 - building SimpleValue for stepNumberDeep2
+2016-01-20 14:11:46 DEBUG PropertyBinder:128 - Building property stepNumberDeep2
+2016-01-20 14:11:46 DEBUG PropertyBinder:172 - Cascading stepNumberDeep2 with null
 2016-01-20 14:11:46 DEBUG AnnotationConfiguration:375 - processing manytoone fk mappings
 2016-01-20 14:11:46 DEBUG Configuration:1120 - processing extends queue
 2016-01-20 14:11:46 DEBUG Configuration:1124 - processing collection mappings
@@ -6999,7 +6999,7 @@ Stacktrace:]
 2016-01-20 14:12:02 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:12:02 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:12:02 DEBUG Printer:83 - listing entities:
-2016-01-20 14:12:02 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#20, num=1234, generalId=42, cowsAmount=0, stepNumber=1, bullsAmount=0}
+2016-01-20 14:12:02 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#20, num=1234, generalId=42, cowsAmount=0, stepNumberDeep2=1, bullsAmount=0}
 2016-01-20 14:12:02 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:12:02 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:12:02 DEBUG ConnectionManager:478 - registering flush end
@@ -7427,7 +7427,7 @@ Stacktrace:]
 2016-01-20 14:12:06 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:12:06 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:12:06 DEBUG Printer:83 - listing entities:
-2016-01-20 14:12:06 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#20, index1=1, num=5204, index3=3, generalId=36, index2=2, cowsAmount=0, index4=4, stepNumber=1, bullsAmount=4}
+2016-01-20 14:12:06 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#20, index1=1, num=5204, index3=3, generalId=36, index2=2, cowsAmount=0, index4=4, stepNumberDeep2=1, bullsAmount=4}
 2016-01-20 14:12:06 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:12:06 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:12:06 DEBUG ConnectionManager:478 - registering flush end
@@ -7847,7 +7847,7 @@ Stacktrace:]
 2016-01-20 14:13:44 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:13:44 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:13:44 DEBUG Printer:83 - listing entities:
-2016-01-20 14:13:44 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=1234, generalId=43, cowsAmount=1, stepNumber=1, bullsAmount=1}
+2016-01-20 14:13:44 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=1234, generalId=43, cowsAmount=1, stepNumberDeep2=1, bullsAmount=1}
 2016-01-20 14:13:44 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:13:44 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:13:44 DEBUG ConnectionManager:478 - registering flush end
@@ -8158,7 +8158,7 @@ Stacktrace:]
 2016-01-20 14:14:53 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:14:53 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:14:53 DEBUG Printer:83 - listing entities:
-2016-01-20 14:14:53 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=1, num=9574, index3=3, generalId=37, index2=2, cowsAmount=1, index4=4, stepNumber=1, bullsAmount=0}
+2016-01-20 14:14:53 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=1, num=9574, index3=3, generalId=37, index2=2, cowsAmount=1, index4=4, stepNumberDeep2=1, bullsAmount=0}
 2016-01-20 14:14:53 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:14:53 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:14:53 DEBUG ConnectionManager:478 - registering flush end
@@ -8480,7 +8480,7 @@ Stacktrace:]
 2016-01-20 14:16:54 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:16:54 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:16:54 DEBUG Printer:83 - listing entities:
-2016-01-20 14:16:54 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=5678, generalId=44, cowsAmount=1, stepNumber=2, bullsAmount=0}
+2016-01-20 14:16:54 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=5678, generalId=44, cowsAmount=1, stepNumberDeep2=2, bullsAmount=0}
 2016-01-20 14:16:54 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:16:54 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:16:54 DEBUG ConnectionManager:478 - registering flush end
@@ -8823,7 +8823,7 @@ Stacktrace:]
 2016-01-20 14:17:30 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:17:30 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:17:30 DEBUG Printer:83 - listing entities:
-2016-01-20 14:17:30 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=5, num=2368, index3=7, generalId=38, index2=6, cowsAmount=1, index4=8, stepNumber=2, bullsAmount=1}
+2016-01-20 14:17:30 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=5, num=2368, index3=7, generalId=38, index2=6, cowsAmount=1, index4=8, stepNumberDeep2=2, bullsAmount=1}
 2016-01-20 14:17:30 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:17:30 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:17:30 DEBUG ConnectionManager:478 - registering flush end
@@ -9177,7 +9177,7 @@ Stacktrace:]
 2016-01-20 14:17:58 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:17:58 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:17:58 DEBUG Printer:83 - listing entities:
-2016-01-20 14:17:58 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=9056, generalId=45, cowsAmount=1, stepNumber=3, bullsAmount=0}
+2016-01-20 14:17:58 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=9056, generalId=45, cowsAmount=1, stepNumberDeep2=3, bullsAmount=0}
 2016-01-20 14:17:58 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:17:58 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:17:58 DEBUG ConnectionManager:478 - registering flush end
@@ -9552,7 +9552,7 @@ Stacktrace:]
 2016-01-20 14:18:29 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:18:29 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:18:29 DEBUG Printer:83 - listing entities:
-2016-01-20 14:18:29 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=9, num=123, index3=5, generalId=39, index2=0, cowsAmount=1, index4=6, stepNumber=3, bullsAmount=1}
+2016-01-20 14:18:29 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=9, num=123, index3=5, generalId=39, index2=0, cowsAmount=1, index4=6, stepNumberDeep2=3, bullsAmount=1}
 2016-01-20 14:18:29 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:18:29 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:18:29 DEBUG ConnectionManager:478 - registering flush end
@@ -9938,7 +9938,7 @@ Stacktrace:]
 2016-01-20 14:19:23 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:19:23 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:19:23 DEBUG Printer:83 - listing entities:
-2016-01-20 14:19:23 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=7890, generalId=46, cowsAmount=2, stepNumber=4, bullsAmount=0}
+2016-01-20 14:19:23 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=7890, generalId=46, cowsAmount=2, stepNumberDeep2=4, bullsAmount=0}
 2016-01-20 14:19:23 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:19:23 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:19:23 DEBUG ConnectionManager:478 - registering flush end
@@ -10345,7 +10345,7 @@ Stacktrace:]
 2016-01-20 14:20:11 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:20:11 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:20:11 DEBUG Printer:83 - listing entities:
-2016-01-20 14:20:11 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=7, num=6801, index3=9, generalId=40, index2=8, cowsAmount=1, index4=0, stepNumber=4, bullsAmount=0}
+2016-01-20 14:20:11 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=7, num=6801, index3=9, generalId=40, index2=8, cowsAmount=1, index4=0, stepNumberDeep2=4, bullsAmount=0}
 2016-01-20 14:20:11 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:20:11 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:20:11 DEBUG ConnectionManager:478 - registering flush end
@@ -10763,7 +10763,7 @@ Stacktrace:]
 2016-01-20 14:21:39 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:21:39 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:21:39 DEBUG Printer:83 - listing entities:
-2016-01-20 14:21:39 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=8956, generalId=47, cowsAmount=1, stepNumber=5, bullsAmount=1}
+2016-01-20 14:21:39 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=8956, generalId=47, cowsAmount=1, stepNumberDeep2=5, bullsAmount=1}
 2016-01-20 14:21:39 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:21:39 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:21:39 DEBUG ConnectionManager:478 - registering flush end
@@ -11202,7 +11202,7 @@ Stacktrace:]
 2016-01-20 14:22:43 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:22:43 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:22:43 DEBUG Printer:83 - listing entities:
-2016-01-20 14:22:43 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=8, num=8012, index3=0, generalId=41, index2=9, cowsAmount=2, index4=5, stepNumber=5, bullsAmount=0}
+2016-01-20 14:22:43 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=8, num=8012, index3=0, generalId=41, index2=9, cowsAmount=2, index4=5, stepNumberDeep2=5, bullsAmount=0}
 2016-01-20 14:22:43 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:22:43 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:22:43 DEBUG ConnectionManager:478 - registering flush end
@@ -11652,7 +11652,7 @@ Stacktrace:]
 2016-01-20 14:23:46 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:23:46 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:23:46 DEBUG Printer:83 - listing entities:
-2016-01-20 14:23:46 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=2981, generalId=48, cowsAmount=0, stepNumber=6, bullsAmount=3}
+2016-01-20 14:23:46 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=2981, generalId=48, cowsAmount=0, stepNumberDeep2=6, bullsAmount=3}
 2016-01-20 14:23:46 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:23:46 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:23:46 DEBUG ConnectionManager:478 - registering flush end
@@ -12127,7 +12127,7 @@ Stacktrace:]
 2016-01-20 14:24:26 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:24:26 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:24:26 DEBUG Printer:83 - listing entities:
-2016-01-20 14:24:26 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=1, num=9111, index3=0, generalId=42, index2=0, cowsAmount=0, index4=1, stepNumber=5, bullsAmount=0}
+2016-01-20 14:24:26 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=1, num=9111, index3=0, generalId=42, index2=0, cowsAmount=0, index4=1, stepNumberDeep2=5, bullsAmount=0}
 2016-01-20 14:24:26 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:24:26 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:24:26 DEBUG ConnectionManager:478 - registering flush end
@@ -12609,7 +12609,7 @@ Stacktrace:]
 2016-01-20 14:25:15 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:25:15 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:25:15 DEBUG Printer:83 - listing entities:
-2016-01-20 14:25:15 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=3981, generalId=49, cowsAmount=0, stepNumber=7, bullsAmount=2}
+2016-01-20 14:25:15 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=3981, generalId=49, cowsAmount=0, stepNumberDeep2=7, bullsAmount=2}
 2016-01-20 14:25:15 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:25:15 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:25:15 DEBUG ConnectionManager:478 - registering flush end
@@ -13112,7 +13112,7 @@ Stacktrace:]
 2016-01-20 14:25:54 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:25:54 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:25:54 DEBUG Printer:83 - listing entities:
-2016-01-20 14:25:54 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=2, num=5111, index3=0, generalId=43, index2=0, cowsAmount=0, index4=2, stepNumber=6, bullsAmount=0}
+2016-01-20 14:25:54 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=2, num=5111, index3=0, generalId=43, index2=0, cowsAmount=0, index4=2, stepNumberDeep2=6, bullsAmount=0}
 2016-01-20 14:25:54 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:25:54 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:25:54 DEBUG ConnectionManager:478 - registering flush end
@@ -13626,7 +13626,7 @@ Stacktrace:]
 2016-01-20 14:26:52 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:26:52 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:26:52 DEBUG Printer:83 - listing entities:
-2016-01-20 14:26:52 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=2984, generalId=50, cowsAmount=0, stepNumber=8, bullsAmount=4}
+2016-01-20 14:26:52 DEBUG Printer:90 - game.entity.PlayerNumber{game=game.entity.Game#21, num=2984, generalId=50, cowsAmount=0, stepNumberDeep2=8, bullsAmount=4}
 2016-01-20 14:26:52 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:26:52 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:26:52 DEBUG ConnectionManager:478 - registering flush end
@@ -14162,7 +14162,7 @@ Stacktrace:]
 2016-01-20 14:27:13 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 2016-01-20 14:27:13 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 2016-01-20 14:27:13 DEBUG Printer:83 - listing entities:
-2016-01-20 14:27:13 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=3, num=7111, index3=0, generalId=44, index2=0, cowsAmount=0, index4=3, stepNumber=7, bullsAmount=0}
+2016-01-20 14:27:13 DEBUG Printer:90 - game.entity.ComputerNumber{game=game.entity.Game#21, index1=3, num=7111, index3=0, generalId=44, index2=0, cowsAmount=0, index4=3, stepNumberDeep2=7, bullsAmount=0}
 2016-01-20 14:27:13 DEBUG AbstractFlushingEventListener:290 - executing flush
 2016-01-20 14:27:13 DEBUG ConnectionManager:469 - registering flush begin
 2016-01-20 14:27:13 DEBUG ConnectionManager:478 - registering flush end
@@ -14641,3 +14641,1456 @@ Stacktrace:]
 2016-01-20 14:27:13 DEBUG DispatcherServlet:591 - Successfully completed request
 2016-01-20 14:27:13 DEBUG XmlWebApplicationContext:273 - Publishing event in context [org.springframework.web.context.support.XmlWebApplicationContext@188b6035]: ServletRequestHandledEvent: url=[/cows_and_bulls/gamePage]; client=[0:0:0:0:0:0:0:1]; method=[POST]; servlet=[cowsAndBullsServlet]; session=[345EE997894F7AE8325D485E915CFF69]; user=[null]; time=[86ms]; status=[OK]
 2016-01-20 14:27:13 DEBUG XmlWebApplicationContext:273 - Publishing event in context [org.springframework.web.context.support.XmlWebApplicationContext@3a80515c]: ServletRequestHandledEvent: url=[/cows_and_bulls/gamePage]; client=[0:0:0:0:0:0:0:1]; method=[POST]; servlet=[cowsAndBullsServlet]; session=[345EE997894F7AE8325D485E915CFF69]; user=[null]; time=[86ms]; status=[OK]
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 5 is: false logId: 1
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 6 is: false logId: 1
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 7 is: false logId: 1
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 8 is: false logId: 1
+2016-01-20 15:01:57 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 567, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 567, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 567, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 567, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 567, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 567, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 8905, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 6789, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 6789, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 6789, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 6789, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 8905, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 8905, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 0
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 0 is: false logId: 2
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 5 is: true logId: 2
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 6 is: true logId: 2
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 7 is: false logId: 2
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 8 is: false logId: 2
+2016-01-20 15:01:57 DEBUG DefinerS1:99 - Result of stage1: digit 9 is: false logId: 2
+2016-01-20 15:01:57 DEBUG DefinerS2:220 - Received indexes: 6, 1, 0, 0, Created number:6100
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 6789, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 6789, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 5, number: 6789, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 5, number: 6789, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 567, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 567, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:01:57 DEBUG DefinerS1:73 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:01:57 DEBUG NumberInfo:43 - step: 4, number: 567, cows: 3
+2016-01-20 15:01:57 DEBUG NumberInfo:52 - step: 4, number: 567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 1
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 1
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 1
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 1
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 5, 6, 7, Created number:9567
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 7, number: 9567, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 7, number: 9567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: true logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 1, 9, 0, 7, Created number:1907
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 5, 6, 7, Created number:9567
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 7, number: 9567, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 7, number: 9567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: true logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 5
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 8, 1, 6, 5, Created number:8165
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 567, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 8, 1, 0, 0, Created number:8100
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 567, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: true logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 8, 1, 0, 0, Created number:8100
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 567, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 7, 1, 0, 0, Created number:7100
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 6, 1, 0, 0, Created number:6100
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 6, 1, 8, 0, Created number:6180
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 6, 1, 8, 9, Created number:6189
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 0, 1, 6, 7, Created number:167
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 1, 7, 6, 9, Created number:1769
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 8905, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 6, 1, 0, 0, Created number:6100
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 1, 5, 0, 0, Created number:1500
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 6789, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: true logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 0, 1, 6, 6, Created number:166
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 6789, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 567, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: true logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 1, 9, 0, 5, Created number:1905
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 3
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 1, 5, 8, 0, Created number:1580
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 0, 5, 8, 1, Created number:581
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 1, 5, 8, 9, Created number:1589
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 6
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 1, 5, 0, 7, Created number:1507
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 8905, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 6, number: 6789, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 6, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 7
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 0, 5, 1, 7, Created number:517
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 8, 9, 0, 5, Created number:8905
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 8905, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 8905, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 7, 5, 8, 1, Created number:7581
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 0
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 2
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 2
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 2
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 2
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 2
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 2
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 6, 1, 0, 0, Created number:6100
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 6789, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 0, 5, 6, 1, Created number:561
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 7, 8, 9, 0, Created number:7890
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 7890, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 7890, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 6, 7, 8, 9, Created number:6789
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 5, number: 6789, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 5, number: 6789, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 1, 9, 6, 5, Created number:1965
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 567, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 6, 8, 1, 5, Created number:6815
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 1, 2, 3, 4, Created number:1234
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 1, number: 1234, cows: 1
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 1, number: 1234, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 5, 6, 7, 8, Created number:5678
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 2, number: 5678, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 2, number: 5678, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 9, 0, 5, 6, Created number:9056
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 3, number: 9056, cows: 2
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 3, number: 9056, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:72 - Received indexes: 0, 5, 6, 7, Created number:567
+2016-01-20 15:16:52 DEBUG NumberInfo:43 - step: 4, number: 567, cows: 3
+2016-01-20 15:16:52 DEBUG NumberInfo:52 - step: 4, number: 567, bulls: 0
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 0 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 5 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 6 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 7 is: true logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 8 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS1:98 - Result of stage1: digit 9 is: false logId: 4
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 6, 7, 1, 5, Created number:6715
+2016-01-20 15:16:52 DEBUG DefinerS2:220 - Received indexes: 6, 7, 1, 5, Created number:6715
+2016-01-20 16:16:39 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:16:39 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:16:39 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:16:39 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:16:39 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:20:22 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:20:22 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:20:22 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:20:22 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:20:22 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:20:22 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:20:22 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:20:22 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 1, 1, 1, Created number:111
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 2, number: 111, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 2, number: 111, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 0, 0, 0, Created number:5000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 3, number: 5000, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 3, number: 5000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 6, 0, 0, 0, Created number:6000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 4, number: 6000, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 4, number: 6000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 7, 0, 0, 0, Created number:7000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 5, number: 7000, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 5, number: 7000, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 7, 8, 0, Created number:780
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 780, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 780, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 7, 7, 9, Created number:779
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 779, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 779, bulls: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 1, 1, 1, Created number:111
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 2, number: 111, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 2, number: 111, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 0, 0, 0, Created number:5000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 3, number: 5000, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 3, number: 5000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 6, 5, 0, 0, Created number:6500
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 4, number: 6500, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 4, number: 6500, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 7, 0, 5, 0, Created number:7050
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 5, number: 7050, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 5, number: 7050, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 8, 7, 0, 5, Created number:8705
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 8705, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 8705, bulls: 2
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 9, 7, 0, 5, Created number:9705
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 9705, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 9705, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 1, 1, 1, Created number:111
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 2, number: 111, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 2, number: 111, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 0, 0, 0, Created number:5000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 3, number: 5000, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 3, number: 5000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 6, 5, 0, 0, Created number:6500
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 4, number: 6500, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 4, number: 6500, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 7, 0, 5, 0, Created number:7050
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 5, number: 7050, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 5, number: 7050, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 8, 7, 0, 5, Created number:8705
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 8705, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 8705, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 9, 8, 7, 5, Created number:9875
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 9875, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 9875, bulls: 4
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 1, 1, 1, Created number:111
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 2, number: 111, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 2, number: 111, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 0, 0, 0, Created number:5000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 3, number: 5000, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 3, number: 5000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 6, 5, 0, 0, Created number:6500
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 4, number: 6500, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 4, number: 6500, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 7, 5, 0, 0, Created number:7500
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 5, number: 7500, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 5, number: 7500, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 8, 5, 6, 0, Created number:8560
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 8560, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 8560, bulls: 2
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 9, 5, 6, 0, Created number:9560
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 9560, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 9560, bulls: 3
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 1, 1, 1, Created number:111
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 2, number: 111, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 2, number: 111, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 0, 0, 0, Created number:5000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 3, number: 5000, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 3, number: 5000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 6, 5, 0, 0, Created number:6500
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 4, number: 6500, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 4, number: 6500, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 7, 5, 0, 0, Created number:7500
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 5, number: 7500, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 5, number: 7500, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 8, 5, 6, 0, Created number:8560
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 8560, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 8560, bulls: 2
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 9, 5, 6, 7, Created number:9567
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 9567, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 9567, bulls: 4
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 3
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 1, 0, 0, 0, Created number:1000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 2, number: 1000, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 2, number: 1000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 2, 0, 0, 0, Created number:2000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 3, number: 2000, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 3, number: 2000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 3, 0, 0, 0, Created number:3000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 4, number: 3000, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 4, number: 3000, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 3, 1, 3, 0, Created number:3130
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 5, number: 3130, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 5, number: 3130, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 3, 2, 0, 0, Created number:3200
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 3200, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 3200, bulls: 2
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 3, 2, 1, 2, Created number:3212
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 3212, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 3212, bulls: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 1, 0, 0, 0, Created number:1000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 4, number: 1000, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 4, number: 1000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 2, 0, 0, 0, Created number:2000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 5, number: 2000, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 5, number: 2000, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 3, 0, 0, 0, Created number:3000
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 3000, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 3000, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 3, 9, 0, Created number:390
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 390, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 390, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 9056, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 9056, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 7890, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 7890, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 8905, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 8905, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 6789, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 6789, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 9567, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 9567, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 1, 0, 9, Created number:5109
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 8, number: 5109, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 8, number: 5109, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 2, 5, 7, 9, Created number:2579
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 9, number: 2579, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 9, number: 2579, bulls: 3
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 3, 5, 7, 9, Created number:3579
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 10, number: 3579, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 10, number: 3579, bulls: 4
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 9056, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 9056, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 7890, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 7890, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 8905, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 8905, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 1, 5, 0, 0, Created number:1500
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 1500, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 1500, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 2, 5, 0, 0, Created number:2500
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 2500, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 2500, bulls: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 9056, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 9056, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 7890, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 7890, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 8905, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 8905, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 1, 0, 0, Created number:5100
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 5100, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 5100, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 2, 8, 0, Created number:5280
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 5280, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 5280, bulls: 2
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 5, 8, 3, Created number:583
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 8, number: 583, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 8, number: 583, bulls: 2
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 5, 8, 8, Created number:588
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 9, number: 588, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 9, number: 588, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 9056, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 9056, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 7890, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 7890, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 8905, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 8905, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 1, 0, 0, Created number:5100
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 5100, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 5100, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 2, 5, 8, 0, Created number:2580
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 2580, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 2580, bulls: 2
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 0, 5, 8, 0, Created number:580
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 8, number: 580, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 8, number: 580, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 9056, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 9056, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 7890, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 7890, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 8905, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 8905, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 1, 0, 8, Created number:5108
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 5108, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 5108, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 2, 5, 0, 8, Created number:2508
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 7, number: 2508, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 7, number: 2508, bulls: 2
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 3, 5, 5, 8, Created number:3558
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 8, number: 3558, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 8, number: 3558, bulls: 4
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 9056, cows: 3
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 9056, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 7890, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 7890, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 6789, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 6789, bulls: 1
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 1, 0, 0, Created number:5100
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 5100, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 5100, bulls: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 9056, cows: 3
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 9056, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 7890, cows: 1
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 7890, bulls: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 0, number: 6789, cows: 2
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 0, number: 6789, bulls: 0
+2016-01-20 16:29:10 DEBUG DefinerS2:220 - Received indexes: 5, 9, 6, 1, Created number:5961
+2016-01-20 16:29:10 DEBUG NumberInfo:43 - step: 6, number: 5961, cows: 0
+2016-01-20 16:29:10 DEBUG NumberInfo:52 - step: 6, number: 5961, bulls: 4
+2016-01-20 16:29:32 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:32 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:32 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:29:32 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:29:32 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:29:32 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:29:32 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:29:32 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:29:32 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 1
+2016-01-20 16:29:32 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 0
+2016-01-20 16:29:58 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:29:58 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:29:58 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:29:58 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:29:58 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:29:58 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:29:58 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:29:58 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:29:58 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:29:58 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:29:58 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:30:59 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:30:59 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:30:59 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:30:59 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:30:59 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:30:59 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:30:59 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:30:59 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:30:59 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:30:59 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:30:59 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:30:59 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 16:30:59 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 16:30:59 DEBUG DefinerS2:220 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 16:32:30 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:32:30 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:32:30 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:32:30 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:32:30 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:32:30 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:32:30 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:32:30 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:32:30 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:32:30 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:32:30 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:32:30 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 16:32:30 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 16:32:30 DEBUG DefinerS2:220 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 16:32:30 DEBUG NumberInfo:43 - step: 6, number: 3110, cows: 2
+2016-01-20 16:32:30 DEBUG NumberInfo:52 - step: 6, number: 3110, bulls: 0
+2016-01-20 16:32:30 DEBUG DefinerS2:220 - Received indexes: 9, 0, 3, 1, Created number:9031
+2016-01-20 16:32:58 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:32:58 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:32:58 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:32:58 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:32:58 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:32:58 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:32:58 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:32:58 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:32:58 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:32:58 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:32:58 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:32:58 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 16:32:58 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 16:32:58 DEBUG DefinerS2:220 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 16:32:58 DEBUG NumberInfo:43 - step: 6, number: 3110, cows: 2
+2016-01-20 16:32:58 DEBUG NumberInfo:52 - step: 6, number: 3110, bulls: 0
+2016-01-20 16:32:58 DEBUG DefinerS2:220 - Received indexes: 9, 0, 3, 1, Created number:9031
+2016-01-20 16:32:58 DEBUG NumberInfo:43 - step: 7, number: 9031, cows: 1
+2016-01-20 16:32:58 DEBUG NumberInfo:52 - step: 7, number: 9031, bulls: 2
+2016-01-20 16:32:58 DEBUG DefinerS2:220 - Received indexes: 1, 0, 3, 1, Created number:1031
+2016-01-20 16:33:38 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:33:38 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:33:38 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:33:38 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:33:38 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:33:38 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:33:38 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:33:38 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:33:38 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:33:38 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:33:38 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:33:38 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 16:33:38 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 16:33:38 DEBUG DefinerS2:220 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 16:33:38 DEBUG NumberInfo:43 - step: 6, number: 3110, cows: 2
+2016-01-20 16:33:38 DEBUG NumberInfo:52 - step: 6, number: 3110, bulls: 0
+2016-01-20 16:33:38 DEBUG DefinerS2:220 - Received indexes: 9, 0, 3, 1, Created number:9031
+2016-01-20 16:33:38 DEBUG NumberInfo:43 - step: 7, number: 9031, cows: 1
+2016-01-20 16:33:38 DEBUG NumberInfo:52 - step: 7, number: 9031, bulls: 2
+2016-01-20 16:33:38 DEBUG DefinerS2:220 - Received indexes: 1, 0, 3, 1, Created number:1031
+2016-01-20 16:33:38 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 1
+2016-01-20 16:33:38 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 1
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:34:36 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:34:36 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:34:36 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 16:34:36 DEBUG DefinerS2:220 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 6, number: 3110, cows: 2
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 6, number: 3110, bulls: 0
+2016-01-20 16:34:36 DEBUG DefinerS2:220 - Received indexes: 9, 0, 3, 1, Created number:9031
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 7, number: 9031, cows: 1
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 7, number: 9031, bulls: 2
+2016-01-20 16:34:36 DEBUG DefinerS2:220 - Received indexes: 1, 0, 3, 1, Created number:1031
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 1
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 1
+2016-01-20 16:34:36 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 0
+2016-01-20 16:34:36 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 4
+2016-01-20 16:37:29 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:37:29 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:37:29 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:37:29 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:37:29 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:37:29 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:37:29 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:37:29 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:37:29 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:37:29 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:37:29 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:37:29 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 16:37:29 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 16:37:29 DEBUG DefinerS2:220 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 16:37:29 DEBUG NumberInfo:43 - step: 6, number: 3110, cows: 2
+2016-01-20 16:37:29 DEBUG NumberInfo:52 - step: 6, number: 3110, bulls: 0
+2016-01-20 16:37:29 DEBUG DefinerS2:220 - Received indexes: 9, 0, 3, 1, Created number:9031
+2016-01-20 16:37:29 DEBUG NumberInfo:43 - step: 7, number: 9031, cows: 1
+2016-01-20 16:37:29 DEBUG NumberInfo:52 - step: 7, number: 9031, bulls: 2
+2016-01-20 16:37:46 DEBUG DefinerS2:220 - Received indexes: 1, 0, 3, 1, Created number:1031
+2016-01-20 16:37:52 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 1
+2016-01-20 16:37:52 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 1
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:51:56 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:51:56 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:51:56 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 16:51:56 DEBUG DefinerS2:220 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 6, number: 3110, cows: 2
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 6, number: 3110, bulls: 0
+2016-01-20 16:51:56 DEBUG DefinerS2:220 - Received indexes: 9, 0, 3, 1, Created number:9031
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 7, number: 9031, cows: 1
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 7, number: 9031, bulls: 2
+2016-01-20 16:51:56 DEBUG DefinerS2:220 - Received indexes: 1, 0, 3, 1, Created number:1031
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 1
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 1
+2016-01-20 16:51:56 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 0
+2016-01-20 16:51:56 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 4
+2016-01-20 16:52:52 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 0
+2016-01-20 16:52:52 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 4
+2016-01-20 16:52:55 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 16:52:55 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 16:52:55 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 16:52:55 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 16:52:55 DEBUG DefinerS2:220 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 16:52:55 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 16:52:55 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 16:53:06 DEBUG DefinerS2:220 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 16:53:06 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 16:53:06 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 16:53:13 DEBUG DefinerS2:220 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 16:53:13 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 16:53:13 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 16:53:14 DEBUG DefinerS2:220 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 16:53:14 DEBUG NumberInfo:43 - step: 6, number: 3110, cows: 2
+2016-01-20 16:53:14 DEBUG NumberInfo:52 - step: 6, number: 3110, bulls: 0
+2016-01-20 16:53:14 DEBUG DefinerS2:220 - Received indexes: 9, 0, 3, 1, Created number:9031
+2016-01-20 16:53:14 DEBUG NumberInfo:43 - step: 7, number: 9031, cows: 1
+2016-01-20 16:53:14 DEBUG NumberInfo:52 - step: 7, number: 9031, bulls: 2
+2016-01-20 16:53:18 DEBUG DefinerS2:220 - Received indexes: 1, 0, 3, 1, Created number:1031
+2016-01-20 16:53:19 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 1
+2016-01-20 16:53:19 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 1
+2016-01-20 17:04:55 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 0
+2016-01-20 17:04:55 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 4
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 0, number: 1234, cows: 1
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 0, number: 1234, bulls: 0
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 0, number: 5678, cows: 0
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 0, number: 5678, bulls: 0
+2016-01-20 17:05:10 DEBUG DefinerS2:228 - Received indexes: 0, 5, 5, 5, Created number:555
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 3, number: 555, cows: 1
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 3, number: 555, bulls: 0
+2016-01-20 17:05:10 DEBUG DefinerS2:228 - Received indexes: 1, 0, 5, 5, Created number:1055
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 4, number: 1055, cows: 0
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 4, number: 1055, bulls: 1
+2016-01-20 17:05:10 DEBUG DefinerS2:228 - Received indexes: 2, 1, 0, 1, Created number:2101
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 5, number: 2101, cows: 1
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 5, number: 2101, bulls: 0
+2016-01-20 17:05:10 DEBUG DefinerS2:228 - Received indexes: 3, 1, 1, 0, Created number:3110
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 6, number: 3110, cows: 2
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 6, number: 3110, bulls: 0
+2016-01-20 17:05:10 DEBUG DefinerS2:228 - Received indexes: 9, 0, 3, 1, Created number:9031
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 7, number: 9031, cows: 1
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 7, number: 9031, bulls: 2
+2016-01-20 17:05:10 DEBUG DefinerS2:228 - Received indexes: 1, 0, 3, 1, Created number:1031
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 8, number: 1031, cows: 1
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 8, number: 1031, bulls: 1
+2016-01-20 17:05:10 DEBUG NumberInfo:43 - step: 9, number: 9093, cows: 0
+2016-01-20 17:05:10 DEBUG NumberInfo:52 - step: 9, number: 9093, bulls: 4

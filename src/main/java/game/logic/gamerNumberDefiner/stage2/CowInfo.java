@@ -13,7 +13,9 @@ public class CowInfo {
     private boolean atLeastOneBullFound;
     private HashMap<Byte, Boolean> positions = new HashMap<>();
 
-    public CowInfo(int indexOfThisBull, HashMap<Integer, CowInfo> cowContainer, HashMap<Byte, Integer> definedPositions) {
+    public CowInfo(int indexOfThisBull,
+                   HashMap<Integer, CowInfo> cowContainer,
+                   HashMap<Byte, Integer> definedPositions) {
         this.indexOfThisBull = indexOfThisBull;
         this.cowContainer = cowContainer;
         this.definedPositions = definedPositions;

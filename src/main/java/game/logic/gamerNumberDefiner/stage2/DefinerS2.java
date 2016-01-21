@@ -22,8 +22,11 @@ public abstract class DefinerS2 {
     protected boolean thirdStageStarted;
 
 
-    public DefinerS2(Integer[] rndSecuence, ArrayList<NumberInfo> numbersHistory, HashMap<Integer, Boolean> definedIndexes,
-                     HashMap<Integer, CowInfo> cowContainer, HashMap<Byte, Integer> definedPositions) {
+    public DefinerS2(Integer[] rndSecuence,
+                     ArrayList<NumberInfo> numbersHistory,
+                     HashMap<Integer, Boolean> definedIndexes,
+                     HashMap<Integer, CowInfo> cowContainer,
+                     HashMap<Byte, Integer> definedPositions) {
         this.rndSecuence = rndSecuence;
         this.numbersHistory = numbersHistory;
         this.definedIndexes = definedIndexes;
@@ -213,12 +216,21 @@ public abstract class DefinerS2 {
 
 
     protected final int assembleByCharacteristics(NumberParametersS2 numberParametersS2){
-        int num = rndSecuence[numberParametersS2.getIndex((byte)0)]*1000 + rndSecuence[numberParametersS2.getIndex((byte)1)]*100
-                + rndSecuence[numberParametersS2.getIndex((byte)2)]*10 + rndSecuence[numberParametersS2.getIndex((byte)3)];
-        numbersHistory.add(new NumberInfo(num, numberParametersS2.getIndex((byte)0), numberParametersS2.getIndex((byte)1),
-                numberParametersS2.getIndex((byte)2), numberParametersS2.getIndex((byte)0), numbersHistory.size() + 1));
+        int num = rndSecuence[numberParametersS2.getIndex((byte)0)]*1000
+                + rndSecuence[numberParametersS2.getIndex((byte)1)]*100
+                + rndSecuence[numberParametersS2.getIndex((byte)2)]*10
+                + rndSecuence[numberParametersS2.getIndex((byte)3)];
+
+        numbersHistory.add(new NumberInfo(num,
+                numberParametersS2.getIndex((byte)0),
+                numberParametersS2.getIndex((byte)1),
+                numberParametersS2.getIndex((byte)2),
+                numberParametersS2.getIndex((byte)3),
+                numbersHistory.size() + 1));
+
         log.debug("Received indexes: " + numberParametersS2.getIndex((byte) 0) + ", " + numberParametersS2.getIndex((byte) 1) + ", "
                 + numberParametersS2.getIndex((byte) 2) + ", " + numberParametersS2.getIndex((byte) 3) + ", Created number:" + num);
+
         return num;
     }
 

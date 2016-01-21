@@ -446,7 +446,40 @@ public class DefinerS2MainTest {
         setCowsAmount(1, 2);
 
         assertEquals(3241, definerStage2.getNumber());
+    }
 
+    public void stage1_000011 () {
+        assembleByIndexes(1, 2, 3, 4);
+        setCowsAmount(1, 0);
+        assembleByIndexes(5, 6, 7, 8);
+        setCowsAmount(0, 0);
+
+        fillDefinedDigits(false, 5);
+        fillDefinedDigits(false, 6);
+        fillDefinedDigits(false, 7);
+        fillDefinedDigits(false, 8);
+    }
+
+    @Test
+    public void test000011 () { //9093 или 7875, 8945630217 (игра №22 в бд)
+        stage1_000011 ();
+
+        assertEquals(555, definerStage2.getNumber());
+        setCowsAmount(1, 0);
+        assertEquals(1055, definerStage2.getNumber());
+        setCowsAmount(0, 1);
+        assertEquals(2101, definerStage2.getNumber());
+        setCowsAmount(1, 0);
+        assertEquals(3110, definerStage2.getNumber());
+        setCowsAmount(2, 0);
+        assertEquals(9031, definerStage2.getNumber());
+        setCowsAmount(1, 2);
+        assertEquals(1031, definerStage2.getNumber());
+        setCowsAmount(1, 1);
+        assertEquals(9093, definerStage2.getNumber());
+        setCowsAmount(0, 4);
+
+        assertEquals(9093, definerStage2.getNumber());
 
     }
 
