@@ -13,10 +13,6 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by Windows on 24.12.2015.
  *
-    Чтобы данный тест функционировал нужно закомментировать строку 55 в NumberDefiner:
-    if (stage==2) {
- // return definer.getNumber();
-    }
  *
  */
 public class DefinerS1MainTest {

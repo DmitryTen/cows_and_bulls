@@ -42,7 +42,7 @@
 		</c:forEach>
 
 		<form action="<c:url value="/gamePage"/>" method="POST">
-        	Введите четырехзначное число:<input type="number" name="playerNumber" pattern="[0-9]{4}"/> </br>
+        	Введите четырехзначное число:<input type="number" name="playerNumber" min="0" max="9999"/> </br>
         	<input type="submit" name="sendInfo" value="Ввести"/>
         </form>
 
