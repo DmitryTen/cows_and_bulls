@@ -1,7 +1,7 @@
 package game.logic.computersNumber;
 
 
-import game.entity.PlayerNumber;
+import game.db.entity.PlayerNumber;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 

@@ -38,7 +38,7 @@ public class Analizator {
             if(definedIndexes.get(index)==true) cowContainer.put(index, new CowInfo(index, cowContainer, definedPositions));
         }
     }
-
+    //Простейший анализ (класс Analizator). Находим одиночных быков, одиночных коров, запоминаем позиции в CowInfo.
     private void analizeStep1(){
         for(int i=0; i<numbersHistory.size(); i++){
             NumberInfo number = numbersHistory.get(i);
@@ -47,17 +47,19 @@ public class Analizator {
             for (int j=0; j<numbersTrueIndexes.size(); j++){
                 int trueIndex = numbersTrueIndexes.get(j);
                 byte positionOfCurrentIndex = number.findPositionOfIndex(trueIndex);
-
+                //одиночные быки
                 if (number.getResultSum() == number.getBullsAmount()){
                     cowContainer.get(trueIndex).setBullPosition(positionOfCurrentIndex);
                 }
+                //одиночные коровы
                 if (number.getResultSum() == number.getCowsAmount()) {
                     cowContainer.get(trueIndex).setCowPositionAndAnalize(positionOfCurrentIndex);
                 }
             }
         }
     }
-
+    //Вторичный анализ. Находим неодиночных быков и коров, анализируя уже занятые позиции пытаемся найти новые бычьи
+    //позиции
     public void analizeStep2() {
         for(int i=0; i<numbersHistory.size(); i++){
             NumberInfo number = numbersHistory.get(i);

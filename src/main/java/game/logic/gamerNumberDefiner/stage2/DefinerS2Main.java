@@ -10,11 +10,25 @@ import java.util.Set;
 
 /**
  * Created by Windows on 26.12.2015.
+ * Основной класс для определения позиций индексов. В работе активно использует [enum DefinerS2.IndexType]
+ *
+ *
  */
 public class DefinerS2Main extends DefinerS2 implements Definer {
 
+    /*Анализатор обрабатывает данные с первого этапа. Вызывается в конце каждого хода*/
     private Analizator analizator;
+    /*
+    * definerStage2 - объект, который создается только когда в число (numberParametersS2) было одновременно помещено
+    * IndexType.COW и IndexType.New_Index,
+    *
+    * */
     private DefinerS2Deep1 definerStage2;
+    /*
+    В numberParametersS2 передаются ЦИФРОВЫЕ и СМЫСЛОВЫЕ значения индексов из которых необходимо построить число ()
+    * (см. DefinerS2.IndexType)
+    * numberParametersS2 - запоминает цифровые и смысловые значения до следующего хода.
+    * В следующий ход  numberParametersS2 сравнивает ожидаемые результаты с полученными от игрока.*/
     private NumberParametersS2 numberParametersS2;
     private boolean firstStep = true;
     private int stepNumber;
@@ -27,7 +41,8 @@ public class DefinerS2Main extends DefinerS2 implements Definer {
                          HashMap<Integer, Boolean> definedIndexes,
                          HashMap<Integer, CowInfo> cowContainer,
                          HashMap<Byte, Integer> definedPositions,
-                         NumberDefiner numberDefiner) {
+                         NumberDefiner numberDefiner)
+    {
         super(rndSecuence, numbersHistory, definedIndexes, cowContainer, definedPositions);
         this.numberDefiner = numberDefiner;
     }
@@ -50,6 +65,11 @@ public class DefinerS2Main extends DefinerS2 implements Definer {
     }
 
     private int assembleNewNumber(){
+        /*
+        В numberParametersS2 передаются ЦИФРОВЫЕ и СМЫСЛОВЫЕ значения индексов из которых необходимо построить число ()
+        * (см. DefinerS2.IndexType)
+        * numberParametersS2 - запоминает цифровые и смысловые значения до следующего хода.
+        * В следующий ход  numberParametersS2 сравнивает ожидаемые результаты с полученными от игрока.*/
         numberParametersS2 = new NumberParametersS2();
 
         //Вставляем быков - индексы, позиции которых уже точно определены
@@ -70,10 +90,15 @@ public class DefinerS2Main extends DefinerS2 implements Definer {
     }
 
     private int handleCurrentDefiner(){
-
+        /*
+        * getSumOfCowsAndBulls(stepNumber) - суммарное количество коров и быков за последний ход
+        * numberParametersS2.getCowsAndBullsAmountSum() - предполагаемое количество быков и коров, т.е: BULL + COW.
+        * Если они равны, то NEW_INDEX - не значимый индекс
+        * */
         if (getSumOfCowsAndBulls(stepNumber) == numberParametersS2.getCowsAndBullsAmountSum()){
             if (numberParametersS2.isNewIndexExists()) createNewFalseIndex();
 
+            //далее идут проверки на количество быков..
             if(numberParametersS2.isCowExists() && getBulls(stepNumber) == numberParametersS2.getBullsAmount()){
                 int cowIndex = numberParametersS2.getCowIndex();
                 byte cowPosition = numberParametersS2.getCowPosition();

@@ -1,12 +1,22 @@
 package game.logic.computersNumber;
 
-import game.entity.PlayerNumber;
+import game.db.entity.PlayerNumber;
+import game.web.wicket.game.models.NumberModel;
+import game.web.wicket.game.models.PageModel;
+import org.apache.log4j.Logger;
 
 /**
  * Created by Windows on 15.01.2016.
+ *
+ * Кратко: данный класс выдает быков и коров по полученному числу.
+ *
+ * Данный класс "загадывает" число при создании игры, а затем работает с числами, запрашиваемыми игроком: выдает игроку
+ * количество быков и коров, относительно запрошенного им числа.
  */
+
 public class CowBullDefiner {
 
+    protected static final Logger log = Logger.getLogger(CowBullDefiner.class);
     //загаданное число
     private int proposedNumber;
     //отдельные цифры загаданного числа (обновляются с каждым запросом)
@@ -20,6 +30,12 @@ public class CowBullDefiner {
     private int requestedD2;
     private int requestedD3;
     private int requestedD4;
+
+    private int step = 0;
+
+    //результаты
+    private int resultBulls;
+    private int resultCows;
 
 
     public CowBullDefiner(){
@@ -48,6 +64,17 @@ public class CowBullDefiner {
         requestedD4 = number /1%10;
     }
 
+    private void defineBulls(int number){
+        defineDigitsFromRequestedNumber(number);
+        fillLocalTemporaryDigits();
+
+        //Сначала вызываем bulls, затем cows - НЕ наоборот.
+        resultBulls = getBulls();
+        resultCows = getCows();
+
+        log.debug("Computers number: " + proposedNumber + ", asked number: " + number + ", bulls amount: " + resultBulls + ", cows amount: " + resultCows);
+    }
+
     public void fillDBEntityByBullsAndCows(PlayerNumber playerNumber){
         int number = playerNumber.getNum();
         defineDigitsFromRequestedNumber(number);
@@ -55,6 +82,25 @@ public class CowBullDefiner {
         
         playerNumber.setBullsAmount(getBulls());
         playerNumber.setCowsAmount(getCows());
+    }
+
+
+
+    public NumberModel createNumberViewAndDefineCowBullAmount(PageModel pageModel){
+        int number = pageModel.getPlayer_number();
+        String playerName = pageModel.getPlayer_name();
+
+        defineBulls(number);
+
+        NumberModel numberModel = new NumberModel();
+        numberModel.setStep(++step);
+        numberModel.setPlayerName(playerName);
+        numberModel.setNumber(number);
+        numberModel.setCows(resultCows);
+        numberModel.setBulls(resultBulls);
+
+
+        return numberModel;
     }
     
      private int getBulls(){
@@ -116,7 +162,10 @@ public class CowBullDefiner {
     }
 
 
-    public int getProposedNumber() {
-        return proposedNumber;
+    public String getProposedNumber() {
+        String stringNum = String.valueOf(proposedNumber);
+        while (stringNum.length() < 4){
+            stringNum = "0" + stringNum;
+        }return stringNum;
     }
 }

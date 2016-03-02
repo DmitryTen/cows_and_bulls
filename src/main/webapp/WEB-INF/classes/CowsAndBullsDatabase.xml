@@ -14,10 +14,10 @@
         <property name="dataSource" ref="cowsDS" />
         <property name="annotatedClasses">
             <list>
-                <value>game.entity.Player</value>
-				<value>game.entity.Game</value>
-				<value>game.entity.ComputerNumber</value>
-                <value>game.entity.PlayerNumber</value>
+                <value>game.db.entity.Player</value>
+				<value>game.db.entity.Game</value>
+				<value>game.db.entity.ComputerNumber</value>
+                <value>game.db.entity.PlayerNumber</value>
             </list>
         </property>
         <property name="hibernateProperties">

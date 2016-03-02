@@ -4,9 +4,12 @@ import java.util.Arrays;
 
 /**
  * Created by Windows on 07.01.2016.
+ * Данный класс служит для создания чисел из индексов. Также он хранит Смысловую информацию о каждом индексе (см. DefinerS2.IndexType).
+ *
  */
 public class NumberParametersS2 {
     private DefinerS2.IndexType[] indexType = new DefinerS2.IndexType[4];
+    //порядковые номера - позиции в числе
     private int[] index = new int[4];
 
     public NumberParametersS2(){
