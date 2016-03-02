@@ -8,8 +8,8 @@ import game.db.entity.PlayerNumber;
 import game.logic.computersNumber.CowBullDefiner;
 import game.logic.gamerNumberDefiner.NumberDefiner;
 import game.logic.gamerNumberDefiner.NumberInfo;
-import game.web.wicket.game.models.NumberModel;
-import game.web.wicket.game.models.PageModel;
+import game.web.wicket.models.NumberModel;
+import game.web.wicket.models.PageModel;
 
 /**
  * Created by Windows on 18.01.2016.

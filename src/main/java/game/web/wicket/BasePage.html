@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Быки и коровы</title>
+    <meta name="description" content="Логическая (математическая) игра Быки и Коровы">
+    <meta name="keywords" content="быки и коровы, логические игры">
+    <link href="/cows_and_bulls/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="header">
+			<div class="main-menu">
+				<ul>
+                    <li><a href="#!" wicket:id="rules_link" class="current rules"><span>Правила игры</span></a></li>
+                    <li><a href="#!" wicket:id="game_link" class="playgame"><span>Игра</span></a></li>
+                    <li><a href="#!" wicket:id="statistics_link" class="statistics"><span>Статистика игр</span></a></li>
+                    <!--	<li><a wicket:id="example_link">Example link</a></li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <H1>Логическая игра "Быки и Коровы"</H1>
+            <div wicket:id="content_panel">Content will be here</div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <span>
+                    2016г.<br>
+                    ООО "Рога и копыта инкорпорэйтед".<br>
+                    Мууууууууууууу!!!
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/cows_and_bulls/js/jquery-1.12.0.js"></script>
+    <script src="/cows_and_bulls/js/script.js"></script>
+</body>
+</html>
+

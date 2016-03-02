@@ -1,8 +1,8 @@
 package game.logic.computersNumber;
 
 import game.db.entity.PlayerNumber;
-import game.web.wicket.game.models.NumberModel;
-import game.web.wicket.game.models.PageModel;
+import game.web.wicket.models.NumberModel;
+import game.web.wicket.models.PageModel;
 import org.apache.log4j.Logger;
 
 /**

@@ -7,49 +7,17 @@
         <property name="template" ref="hibernateTemplate" />
     </bean>
 
-    <!--<bean name="computerNumberFacade" parent="abstractTransactionProxy">-->
-        <!--<property name="target">-->
-            <!--<bean class="game.db.facade.ComputerNumberFacade">-->
-                <!--<property name="numberDAO" ref="computerNumberDAO" />-->
-            <!--</bean>-->
-        <!--</property>-->
-    <!--</bean>-->
-
     <bean name="playerDAO" class="game.db.dao.PlayerDAOImpl">
         <property name="template" ref="hibernateTemplate" />
     </bean>
-
-    <!--<bean name="playerFacade" parent="abstractTransactionProxy">-->
-        <!--<property name="target">-->
-            <!--<bean class="game.db.facade.PlayerFacade">-->
-                <!--<property name="playerDAO" ref="playerDAO" />-->
-            <!--</bean>-->
-        <!--</property>-->
-    <!--</bean>-->
 
     <bean name="gameDAO" class="game.db.dao.GameDAOImpl">
         <property name="template" ref="hibernateTemplate" />
     </bean>
 
-    <!--<bean name="gameFacade" parent="abstractTransactionProxy">-->
-        <!--<property name="target">-->
-            <!--<bean class="game.db.facade.GameFacade">-->
-                <!--<property name="gameDAO" ref="gameDAO" />-->
-            <!--</bean>-->
-        <!--</property>-->
-    <!--</bean>-->
-
     <bean name="playerNumberDAO" class="game.db.dao.PlayerNumberDAOImpl">
         <property name="template" ref="hibernateTemplate" />
     </bean>
-
-    <!--<bean name="playerNumberFacade" parent="abstractTransactionProxy">-->
-        <!--<property name="target">-->
-            <!--<bean class="game.db.facade.PlayerNumberFacade">-->
-                <!--<property name="numberDAO" ref="playerNumberDAO" />-->
-            <!--</bean>-->
-        <!--</property>-->
-    <!--</bean>-->
 
     <bean name="gamePageFacade" parent="abstractTransactionProxy">
         <property name="target">

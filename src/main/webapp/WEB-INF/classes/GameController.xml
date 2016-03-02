@@ -5,38 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
             http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
-
-    <!--<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
-        <!--<property name="viewClass">-->
-            <!--<value>org.springframework.web.servlet.view.JstlView</value>-->
-        <!--</property>-->
-        <!--<property name="order" value="2"/>-->
-        <!--<property name="prefix">-->
-            <!--<value>/</value>-->
-        <!--</property>-->
-        <!--<property name="suffix">-->
-            <!--<value>.jsp</value>-->
-        <!--</property>-->
-    <!--</bean>-->
-
-    <!--<bean id="mainController" class="game.web.controller.MainController">-->
-        <!--<property name="gameFacade" ref="gameFacade" />-->
-        <!--<property name="playerFacade" ref="playerFacade" />-->
-        <!--<property name="computerNumberFacade" ref="computerNumberFacade" />-->
-        <!--<property name="playerNumberFacade" ref="playerNumberFacade" />-->
-    <!--</bean>-->
-
-
-    <!--<bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">-->
-        <!--<property name="mappings">-->
-            <!--<props>-->
-                <!--<prop key="/gamePage">mainController</prop>-->
-            <!--</props>-->
-        <!--</property>-->
-    <!--</bean>-->
-
-
-    <bean id="wicketApplication" class="game.web.wicket.game.WicketApplication">
+    <bean id="wicketApplication" class="game.web.wicket.WicketApplication">
         <property name="gamePageFacade" ref="gamePageFacade"/>
     </bean>
 </beans>
